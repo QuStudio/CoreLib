@@ -8,23 +8,9 @@
 
 import Foundation
 
-
-
-struct Lexeme {
+public protocol Lexeme {
     
-    var lemma: Word
-    var forms: [Word]?
-    var origin: Word
-    var meaning: Word
-    var permissibility: Permissibility
-    
-}
-
-enum Permissibility {
-    
-    case NotAllowed(reason: String)
-    case NotRecommended(reason: String)
-    case GenerallyAllowed(reason: String)
-    case Allowed
+    var lemma: Word { get }
+    var meaning: Word { get }
     
 }

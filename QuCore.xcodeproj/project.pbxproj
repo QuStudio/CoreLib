@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BECA572A1CA07E6300757379 /* ForeignLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA57291CA07E6300757379 /* ForeignLexeme.swift */; };
+		BECA572C1CA07EB700757379 /* NativeLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA572B1CA07EB700757379 /* NativeLexeme.swift */; };
 		BEDE05CE1CA05C4E00D04EF7 /* QuCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDE05CD1CA05C4E00D04EF7 /* QuCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEDE05D51CA05C4F00D04EF7 /* QuCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDE05CA1CA05C4E00D04EF7 /* QuCore.framework */; };
 		BEDE05DA1CA05C4F00D04EF7 /* QuCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE05D91CA05C4F00D04EF7 /* QuCoreTests.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BECA57291CA07E6300757379 /* ForeignLexeme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForeignLexeme.swift; sourceTree = "<group>"; };
+		BECA572B1CA07EB700757379 /* NativeLexeme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeLexeme.swift; sourceTree = "<group>"; };
 		BEDE05CA1CA05C4E00D04EF7 /* QuCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDE05CD1CA05C4E00D04EF7 /* QuCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuCore.h; sourceTree = "<group>"; };
 		BEDE05CF1CA05C4E00D04EF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,8 +81,10 @@
 			children = (
 				BEDE05CF1CA05C4E00D04EF7 /* Info.plist */,
 				BEDE05E41CA05E5900D04EF7 /* Lexeme.swift */,
+				BECA57291CA07E6300757379 /* ForeignLexeme.swift */,
 				BEDE05CD1CA05C4E00D04EF7 /* QuCore.h */,
 				BEDE05E61CA0787F00D04EF7 /* Word.swift */,
+				BECA572B1CA07EB700757379 /* NativeLexeme.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -200,8 +206,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BECA572C1CA07EB700757379 /* NativeLexeme.swift in Sources */,
 				BEDE05E51CA05E5900D04EF7 /* Lexeme.swift in Sources */,
 				BEDE05E71CA0787F00D04EF7 /* Word.swift in Sources */,
+				BECA572A1CA07E6300757379 /* ForeignLexeme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
