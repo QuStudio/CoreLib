@@ -11,6 +11,7 @@
 		BEDE05D51CA05C4F00D04EF7 /* QuCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDE05CA1CA05C4E00D04EF7 /* QuCore.framework */; };
 		BEDE05DA1CA05C4F00D04EF7 /* QuCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE05D91CA05C4F00D04EF7 /* QuCoreTests.swift */; };
 		BEDE05E51CA05E5900D04EF7 /* Lexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE05E41CA05E5900D04EF7 /* Lexeme.swift */; };
+		BEDE05E71CA0787F00D04EF7 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE05E61CA0787F00D04EF7 /* Word.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		BEDE05D91CA05C4F00D04EF7 /* QuCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuCoreTests.swift; sourceTree = "<group>"; };
 		BEDE05DB1CA05C4F00D04EF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEDE05E41CA05E5900D04EF7 /* Lexeme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lexeme.swift; sourceTree = "<group>"; };
+		BEDE05E61CA0787F00D04EF7 /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				BEDE05CF1CA05C4E00D04EF7 /* Info.plist */,
 				BEDE05E41CA05E5900D04EF7 /* Lexeme.swift */,
 				BEDE05CD1CA05C4E00D04EF7 /* QuCore.h */,
+				BEDE05E61CA0787F00D04EF7 /* Word.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEDE05E51CA05E5900D04EF7 /* Lexeme.swift in Sources */,
+				BEDE05E71CA0787F00D04EF7 /* Word.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreymonde.QuCore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Debug;
 		};

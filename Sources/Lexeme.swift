@@ -12,18 +12,19 @@ import Foundation
 
 struct Lexeme {
     
-    var lemma: String
-    var forms: Set<String>?
-    var meaning: String
+    var lemma: Word
+    var forms: [Word]?
+    var origin: Word
+    var meaning: Word
     var permissibility: Permissibility
     
 }
 
 enum Permissibility {
     
-    case NotAllowed
-    case NotRecommended
-    case GenerallyAllowed
+    case NotAllowed(reason: String)
+    case NotRecommended(reason: String)
+    case GenerallyAllowed(reason: String)
     case Allowed
     
 }
