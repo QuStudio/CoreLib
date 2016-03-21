@@ -55,7 +55,7 @@
 		BEDE05C01CA05C4E00D04EF7 = {
 			isa = PBXGroup;
 			children = (
-				BEDE05CC1CA05C4E00D04EF7 /* QuCore */,
+				BEDE05CC1CA05C4E00D04EF7 /* Sources */,
 				BEDE05D81CA05C4F00D04EF7 /* QuCoreTests */,
 				BEDE05CB1CA05C4E00D04EF7 /* Products */,
 			);
@@ -70,21 +70,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BEDE05CC1CA05C4E00D04EF7 /* QuCore */ = {
+		BEDE05CC1CA05C4E00D04EF7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				BEDE05CD1CA05C4E00D04EF7 /* QuCore.h */,
 				BEDE05CF1CA05C4E00D04EF7 /* Info.plist */,
 				BEDE05E41CA05E5900D04EF7 /* Lexeme.swift */,
+				BEDE05CD1CA05C4E00D04EF7 /* QuCore.h */,
 			);
-			path = QuCore;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		BEDE05D81CA05C4F00D04EF7 /* QuCoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				BEDE05D91CA05C4F00D04EF7 /* QuCoreTests.swift */,
 				BEDE05DB1CA05C4F00D04EF7 /* Info.plist */,
+				BEDE05D91CA05C4F00D04EF7 /* QuCoreTests.swift */,
 			);
 			path = QuCoreTests;
 			sourceTree = "<group>";
@@ -316,7 +316,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = QuCore/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreymonde.QuCore;
@@ -336,7 +336,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = QuCore/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreymonde.QuCore;
@@ -386,6 +386,7 @@
 				BEDE05E01CA05C4F00D04EF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEDE05E11CA05C4F00D04EF7 /* Build configuration list for PBXNativeTarget "QuCoreTests" */ = {
 			isa = XCConfigurationList;
@@ -394,6 +395,7 @@
 				BEDE05E31CA05C4F00D04EF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
