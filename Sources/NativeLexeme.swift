@@ -17,6 +17,6 @@ public struct NativeLexeme: Lexeme {
 
 public enum Usage {
 
-    
+	case General    
     
 }
