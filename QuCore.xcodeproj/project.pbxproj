@@ -10,6 +10,7 @@
 		BEDE05CE1CA05C4E00D04EF7 /* QuCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDE05CD1CA05C4E00D04EF7 /* QuCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEDE05D51CA05C4F00D04EF7 /* QuCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDE05CA1CA05C4E00D04EF7 /* QuCore.framework */; };
 		BEDE05DA1CA05C4F00D04EF7 /* QuCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE05D91CA05C4F00D04EF7 /* QuCoreTests.swift */; };
+		BEDE05E51CA05E5900D04EF7 /* Lexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE05E41CA05E5900D04EF7 /* Lexeme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		BEDE05D41CA05C4F00D04EF7 /* QuCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDE05D91CA05C4F00D04EF7 /* QuCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuCoreTests.swift; sourceTree = "<group>"; };
 		BEDE05DB1CA05C4F00D04EF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEDE05E41CA05E5900D04EF7 /* Lexeme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lexeme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				BEDE05CD1CA05C4E00D04EF7 /* QuCore.h */,
 				BEDE05CF1CA05C4E00D04EF7 /* Info.plist */,
+				BEDE05E41CA05E5900D04EF7 /* Lexeme.swift */,
 			);
 			path = QuCore;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEDE05E51CA05E5900D04EF7 /* Lexeme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +309,7 @@
 		BEDE05DF1CA05C4F00D04EF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -317,12 +322,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreymonde.QuCore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		BEDE05E01CA05C4F00D04EF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
