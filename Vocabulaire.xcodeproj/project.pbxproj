@@ -63,8 +63,8 @@
 		BE83B22C1CA18AC300F80D10 /* Word */ = {
 			isa = PBXGroup;
 			children = (
-				BEDE05E61CA0787F00D04EF7 /* Word.swift */,
 				BE83B22A1CA18AAC00F80D10 /* CaseSensitiveWord.swift */,
+				BEDE05E61CA0787F00D04EF7 /* Word.swift */,
 			);
 			path = Word;
 			sourceTree = "<group>";
@@ -81,19 +81,28 @@
 		BE83B22E1CA18AE000F80D10 /* Lexeme */ = {
 			isa = PBXGroup;
 			children = (
-				BEDE05E41CA05E5900D04EF7 /* Lexeme.swift */,
 				BECA57291CA07E6300757379 /* ForeignLexeme.swift */,
+				BEDE05E41CA05E5900D04EF7 /* Lexeme.swift */,
 				BECA572B1CA07EB700757379 /* NativeLexeme.swift */,
 			);
 			path = Lexeme;
+			sourceTree = "<group>";
+		};
+		BE83B22F1CA1974D00F80D10 /* Vocabulaire */ = {
+			isa = PBXGroup;
+			children = (
+				BE83B22E1CA18AE000F80D10 /* Lexeme */,
+				BE83B22C1CA18AC300F80D10 /* Word */,
+			);
+			path = Vocabulaire;
 			sourceTree = "<group>";
 		};
 		BEDE05C01CA05C4E00D04EF7 = {
 			isa = PBXGroup;
 			children = (
 				BEDE05CC1CA05C4E00D04EF7 /* Sources */,
-				BE83B22D1CA18ACD00F80D10 /* Resources */,
 				BEDE05D81CA05C4F00D04EF7 /* Tests */,
+				BE83B22D1CA18ACD00F80D10 /* Resources */,
 				BEDE05CB1CA05C4E00D04EF7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,8 +119,7 @@
 		BEDE05CC1CA05C4E00D04EF7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				BE83B22E1CA18AE000F80D10 /* Lexeme */,
-				BE83B22C1CA18AC300F80D10 /* Word */,
+				BE83B22F1CA1974D00F80D10 /* Vocabulaire */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
