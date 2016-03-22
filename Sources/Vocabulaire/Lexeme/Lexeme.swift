@@ -18,6 +18,6 @@ public protocol Lexeme {
 public struct Entry {
 
 	public let foreign: ForeignLexeme
-	public let natives: [NativeLexemes]
+	public let natives: [NativeLexeme]
 
 }
