@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BE83B22B1CA18AAC00F80D10 /* CaseSensitiveWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B22A1CA18AAC00F80D10 /* CaseSensitiveWord.swift */; };
+		BE83B2311CA1987200F80D10 /* GeneralWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2301CA1987200F80D10 /* GeneralWord.swift */; };
 		BECA572A1CA07E6300757379 /* ForeignLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA57291CA07E6300757379 /* ForeignLexeme.swift */; };
 		BECA572C1CA07EB700757379 /* NativeLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA572B1CA07EB700757379 /* NativeLexeme.swift */; };
 		BEDE05CE1CA05C4E00D04EF7 /* QuCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDE05CD1CA05C4E00D04EF7 /* QuCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		BE83B22A1CA18AAC00F80D10 /* CaseSensitiveWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseSensitiveWord.swift; sourceTree = "<group>"; };
+		BE83B2301CA1987200F80D10 /* GeneralWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralWord.swift; sourceTree = "<group>"; };
 		BECA57291CA07E6300757379 /* ForeignLexeme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForeignLexeme.swift; sourceTree = "<group>"; };
 		BECA572B1CA07EB700757379 /* NativeLexeme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeLexeme.swift; sourceTree = "<group>"; };
 		BEDE05CA1CA05C4E00D04EF7 /* Vocabulaire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vocabulaire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,8 +65,9 @@
 		BE83B22C1CA18AC300F80D10 /* Word */ = {
 			isa = PBXGroup;
 			children = (
-				BE83B22A1CA18AAC00F80D10 /* CaseSensitiveWord.swift */,
 				BEDE05E61CA0787F00D04EF7 /* Word.swift */,
+				BE83B2301CA1987200F80D10 /* GeneralWord.swift */,
+				BE83B22A1CA18AAC00F80D10 /* CaseSensitiveWord.swift */,
 			);
 			path = Word;
 			sourceTree = "<group>";
@@ -81,8 +84,8 @@
 		BE83B22E1CA18AE000F80D10 /* Lexeme */ = {
 			isa = PBXGroup;
 			children = (
-				BECA57291CA07E6300757379 /* ForeignLexeme.swift */,
 				BEDE05E41CA05E5900D04EF7 /* Lexeme.swift */,
+				BECA57291CA07E6300757379 /* ForeignLexeme.swift */,
 				BECA572B1CA07EB700757379 /* NativeLexeme.swift */,
 			);
 			path = Lexeme;
@@ -245,6 +248,7 @@
 				BEDE05E51CA05E5900D04EF7 /* Lexeme.swift in Sources */,
 				BEDE05E71CA0787F00D04EF7 /* Word.swift in Sources */,
 				BE83B22B1CA18AAC00F80D10 /* CaseSensitiveWord.swift in Sources */,
+				BE83B2311CA1987200F80D10 /* GeneralWord.swift in Sources */,
 				BECA572A1CA07E6300757379 /* ForeignLexeme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
