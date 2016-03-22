@@ -9,37 +9,37 @@
 import Foundation
 
 public struct CaseSensitiveWord: Word {
-    
+
     public init(string value: String) {
         self.view = value
     }
     public let view: String
-    
+
 }
 
 
 extension CaseSensitiveWord: StringLiteralConvertible {
-    
+
     public init(stringLiteral value: StringLiteralType) {
         self.init(string: value)
     }
-    
+
     public init(extendedGraphemeClusterLiteral value: String) {
         self.init(string: value)
     }
-    
+
     public init(unicodeScalarLiteral value: String) {
         self.init(string: value)
     }
-    
+
 }
 
 extension CaseSensitiveWord: Hashable {
-    
+
     public var hashValue: Int {
         return view.hashValue
     }
-    
+
 }
 
 public func == (left: CaseSensitiveWord, right: CaseSensitiveWord) -> Bool {

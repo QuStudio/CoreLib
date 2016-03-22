@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		BE83B22B1CA18AAC00F80D10 /* CaseSensitiveWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B22A1CA18AAC00F80D10 /* CaseSensitiveWord.swift */; };
 		BE83B2311CA1987200F80D10 /* GeneralWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2301CA1987200F80D10 /* GeneralWord.swift */; };
+		BE83B2341CA19D0F00F80D10 /* GeneralWordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2321CA19CB400F80D10 /* GeneralWordTests.swift */; };
 		BECA572A1CA07E6300757379 /* ForeignLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA57291CA07E6300757379 /* ForeignLexeme.swift */; };
 		BECA572C1CA07EB700757379 /* NativeLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA572B1CA07EB700757379 /* NativeLexeme.swift */; };
 		BEDE05CE1CA05C4E00D04EF7 /* QuCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDE05CD1CA05C4E00D04EF7 /* QuCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEDE05D51CA05C4F00D04EF7 /* Vocabulaire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDE05CA1CA05C4E00D04EF7 /* Vocabulaire.framework */; };
-		BEDE05DA1CA05C4F00D04EF7 /* QuCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE05D91CA05C4F00D04EF7 /* QuCoreTests.swift */; };
 		BEDE05E51CA05E5900D04EF7 /* Lexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE05E41CA05E5900D04EF7 /* Lexeme.swift */; };
 		BEDE05E71CA0787F00D04EF7 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE05E61CA0787F00D04EF7 /* Word.swift */; };
 /* End PBXBuildFile section */
@@ -31,13 +31,13 @@
 /* Begin PBXFileReference section */
 		BE83B22A1CA18AAC00F80D10 /* CaseSensitiveWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseSensitiveWord.swift; sourceTree = "<group>"; };
 		BE83B2301CA1987200F80D10 /* GeneralWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralWord.swift; sourceTree = "<group>"; };
+		BE83B2321CA19CB400F80D10 /* GeneralWordTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralWordTests.swift; sourceTree = "<group>"; };
 		BECA57291CA07E6300757379 /* ForeignLexeme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForeignLexeme.swift; sourceTree = "<group>"; };
 		BECA572B1CA07EB700757379 /* NativeLexeme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeLexeme.swift; sourceTree = "<group>"; };
 		BEDE05CA1CA05C4E00D04EF7 /* Vocabulaire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vocabulaire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDE05CD1CA05C4E00D04EF7 /* QuCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuCore.h; sourceTree = "<group>"; };
 		BEDE05CF1CA05C4E00D04EF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BEDE05D41CA05C4F00D04EF7 /* Vocabulaire.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Vocabulaire.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEDE05D91CA05C4F00D04EF7 /* QuCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuCoreTests.swift; sourceTree = "<group>"; };
+		BEDE05D41CA05C4F00D04EF7 /* VocabulaireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VocabulaireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDE05DB1CA05C4F00D04EF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEDE05E41CA05E5900D04EF7 /* Lexeme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lexeme.swift; sourceTree = "<group>"; };
 		BEDE05E61CA0787F00D04EF7 /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
@@ -114,7 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				BEDE05CA1CA05C4E00D04EF7 /* Vocabulaire.framework */,
-				BEDE05D41CA05C4F00D04EF7 /* Vocabulaire.xctest */,
+				BEDE05D41CA05C4F00D04EF7 /* VocabulaireTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,7 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				BEDE05DB1CA05C4F00D04EF7 /* Info.plist */,
-				BEDE05D91CA05C4F00D04EF7 /* QuCoreTests.swift */,
+				BE83B2321CA19CB400F80D10 /* GeneralWordTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -183,7 +183,7 @@
 			);
 			name = VocabulaireTests;
 			productName = QuCoreTests;
-			productReference = BEDE05D41CA05C4F00D04EF7 /* Vocabulaire.xctest */;
+			productReference = BEDE05D41CA05C4F00D04EF7 /* VocabulaireTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -257,7 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEDE05DA1CA05C4F00D04EF7 /* QuCoreTests.swift in Sources */,
+				BE83B2341CA19D0F00F80D10 /* GeneralWordTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,8 +403,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dreymonde.QuCoreTests;
-				PRODUCT_NAME = Vocabulaire;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreymonde.VocabulaireTests;
+				PRODUCT_NAME = VocabulaireTests;
 			};
 			name = Debug;
 		};
@@ -414,8 +414,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dreymonde.QuCoreTests;
-				PRODUCT_NAME = Vocabulaire;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreymonde.VocabulaireTests;
+				PRODUCT_NAME = VocabulaireTests;
 			};
 			name = Release;
 		};

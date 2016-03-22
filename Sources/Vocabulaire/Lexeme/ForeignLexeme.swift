@@ -9,20 +9,18 @@
 import Foundation
 
 public struct ForeignLexeme: Lexeme {
-    
+
     public let lemma: Word
     public let forms: [Word]?
     public let origin: Word
     public let meaning: Word
     public let permissibility: Permissibility
-    
-}
 
-public enum Permissibility {
-    
-    case NotAllowed//(reason: String)
-    case NotRecommended//(reason: String)
-    case GenerallyAllowed//(reason: String)
-    case Allowed
-    
+    public enum Permissibility {
+        case NotAllowed//(reason: String)
+        case NotRecommended//(reason: String)
+        case GenerallyAllowed//(reason: String)
+        case Allowed
+    }
+
 }

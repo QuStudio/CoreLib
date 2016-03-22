@@ -9,15 +9,15 @@
 import Foundation
 
 public struct NativeLexeme: Lexeme {
-    
+
     public let lemma: Word
     public let meaning: Word
     public let usage: Usage
-    
-}
 
-public enum Usage {
-    case General
-    case Promising
-    case Rare
+    public enum Usage {
+        case General
+        case Promising
+        case Rare
+    }
+
 }
