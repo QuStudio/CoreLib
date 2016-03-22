@@ -11,6 +11,6 @@ import Foundation
 public protocol Lexeme {
 
     var lemma: Word { get }
-    var meaning: Word { get }
+    var meaning: String { get }
 
 }

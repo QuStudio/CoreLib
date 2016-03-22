@@ -11,7 +11,7 @@ import Foundation
 public struct NativeLexeme: Lexeme {
 
     public let lemma: Word
-    public let meaning: Word
+    public let meaning: String
     public let usage: Usage
 
     public enum Usage {
