@@ -14,10 +14,26 @@ public struct NativeLexeme: Lexeme {
     public let meaning: String
     public let usage: Usage
 
-    public enum Usage {
-        case General
+    public enum Usage: Int, Prioritied {
+        case General = 1
         case Promising
         case Rare
+        
+        public var priority: Int {
+            return rawValue
+        }
     }
 
+}
+
+extension NativeLexeme: Hashable {
+    
+    public var hashValue: Int {
+        return lemma.view.hashValue
+    }
+    
+}
+
+public func == (left: NativeLexeme, right: NativeLexeme) -> Bool {
+    return left.lemma.view == right.lemma.view && left.meaning == right.meaning && left.usage == right.usage
 }

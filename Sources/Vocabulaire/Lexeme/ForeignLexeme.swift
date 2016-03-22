@@ -15,12 +15,16 @@ public struct ForeignLexeme: Lexeme {
     public let origin: Word
     public let meaning: String
     public let permissibility: Permissibility
-
-    public enum Permissibility {
-        case NotAllowed//(reason: String)
-        case NotRecommended//(reason: String)
-        case GenerallyAllowed//(reason: String)
-        case Allowed
+    
+    public enum Permissibility: Int, Prioritied {
+        case Allowed = 1
+        case GenerallyAllowed
+        case NotRecommended
+        case NotAllowed
+        
+        public var priority: Int {
+            return rawValue
+        }
     }
 
 }

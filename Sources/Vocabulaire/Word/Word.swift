@@ -20,5 +20,5 @@ extension Word {
     public var description: String {
         return view
     }
-
+    
 }

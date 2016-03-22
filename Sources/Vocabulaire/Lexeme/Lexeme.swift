@@ -14,10 +14,3 @@ public protocol Lexeme {
     var meaning: String { get }
 
 }
-
-public struct Entry {
-
-	public let foreign: ForeignLexeme
-	public let natives: [NativeLexeme]
-
-}
