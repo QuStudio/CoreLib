@@ -8,57 +8,55 @@
 
 import Foundation
 
-public struct Word {
-    
-    private let view: String
-    public var original: String {
+public protocol Word: CustomStringConvertible {
+
+    init(string value: String)
+    var view: String { get }
+
+}
+
+extension Word {
+
+    public var description: String {
         return view
     }
-    public var lowercase: String {
-        return view.lowercaseString
-    }
-    public var uppercase: String {
-        return view.uppercaseString
-    }
+
+}
+
+public struct CaseSensitiveWord: Word {
     
-    public init(original: String) {
-        self.view = original
+    public init(string value: String) {
+        self.view = value
     }
+    public let view: String
     
 }
 
-extension Word: Hashable {
-    
-    public var hashValue: Int {
-        return lowercase.hashValue
-    }
-    
-}
 
-public func == (left: Word, right: Word) -> Bool {
-    return left.lowercase == right.lowercase
-}
-
-extension Word: CustomStringConvertible {
-    
-    public var description: String {
-        return original
-    }
-    
-}
-
-extension Word: StringLiteralConvertible {
+extension CaseSensitiveWord: StringLiteralConvertible {
     
     public init(stringLiteral value: StringLiteralType) {
-        self.init(original: value)
+        self.init(string: value)
     }
     
     public init(extendedGraphemeClusterLiteral value: String) {
-        self.init(original: value)
+        self.init(string: value)
     }
     
     public init(unicodeScalarLiteral value: String) {
-        self.init(original: value)
+        self.init(string: value)
     }
     
+}
+
+extension CaseSensitiveWord: Hashable {
+    
+    public var hashValue: Int {
+        return view.hashValue
+    }
+    
+}
+
+public func == (left: CaseSensitiveWord, right: CaseSensitiveWord) -> Bool {
+    return left.view == right.view
 }
