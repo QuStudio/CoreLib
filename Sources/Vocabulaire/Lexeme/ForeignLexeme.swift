@@ -14,6 +14,7 @@ public struct ForeignLexeme: Lexeme {
     public let forms: [Word]?
     public let origin: Word
     public let meaning: String
+    public let remark: String?
     public let permissibility: Permissibility
 
     public enum Permissibility {
