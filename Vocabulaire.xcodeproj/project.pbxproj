@@ -14,6 +14,19 @@
 		BE83B2381CA1F34900F80D10 /* CaseSensitiveWordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2371CA1F34900F80D10 /* CaseSensitiveWordTests.swift */; };
 		BE83B23C1CA1F66500F80D10 /* Prioritied.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B23B1CA1F66500F80D10 /* Prioritied.swift */; };
 		BE83B23E1CA1F78100F80D10 /* EntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B23D1CA1F78100F80D10 /* EntryTests.swift */; };
+		BEAC67811CA2B930004D2EFE /* Vocabulaire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEAC67771CA2B930004D2EFE /* Vocabulaire.framework */; };
+		BEAC678E1CA2B96E004D2EFE /* QuCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDE05CD1CA05C4E00D04EF7 /* QuCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEAC678F1CA2B996004D2EFE /* GeneralWordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2321CA19CB400F80D10 /* GeneralWordTests.swift */; };
+		BEAC67901CA2B996004D2EFE /* CaseSensitiveWordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2371CA1F34900F80D10 /* CaseSensitiveWordTests.swift */; };
+		BEAC67911CA2B996004D2EFE /* EntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B23D1CA1F78100F80D10 /* EntryTests.swift */; };
+		BEAC67921CA2B9BF004D2EFE /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2351CA1F29900F80D10 /* Entry.swift */; };
+		BEAC67931CA2B9C2004D2EFE /* Lexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE05E41CA05E5900D04EF7 /* Lexeme.swift */; };
+		BEAC67941CA2B9C4004D2EFE /* ForeignLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA57291CA07E6300757379 /* ForeignLexeme.swift */; };
+		BEAC67951CA2B9C7004D2EFE /* NativeLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA572B1CA07EB700757379 /* NativeLexeme.swift */; };
+		BEAC67961CA2B9CB004D2EFE /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE05E61CA0787F00D04EF7 /* Word.swift */; };
+		BEAC67971CA2B9CB004D2EFE /* GeneralWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2301CA1987200F80D10 /* GeneralWord.swift */; };
+		BEAC67981CA2B9CB004D2EFE /* CaseSensitiveWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B22A1CA18AAC00F80D10 /* CaseSensitiveWord.swift */; };
+		BEAC67991CA2B9CB004D2EFE /* Prioritied.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B23B1CA1F66500F80D10 /* Prioritied.swift */; };
 		BECA572A1CA07E6300757379 /* ForeignLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA57291CA07E6300757379 /* ForeignLexeme.swift */; };
 		BECA572C1CA07EB700757379 /* NativeLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA572B1CA07EB700757379 /* NativeLexeme.swift */; };
 		BEDE05CE1CA05C4E00D04EF7 /* QuCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDE05CD1CA05C4E00D04EF7 /* QuCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +36,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BEAC67821CA2B930004D2EFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEDE05C11CA05C4E00D04EF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEAC67761CA2B930004D2EFE;
+			remoteInfo = "Vocabulaire iOS";
+		};
 		BEDE05D61CA05C4F00D04EF7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BEDE05C11CA05C4E00D04EF7 /* Project object */;
@@ -40,6 +60,8 @@
 		BE83B2371CA1F34900F80D10 /* CaseSensitiveWordTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseSensitiveWordTests.swift; sourceTree = "<group>"; };
 		BE83B23B1CA1F66500F80D10 /* Prioritied.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prioritied.swift; sourceTree = "<group>"; };
 		BE83B23D1CA1F78100F80D10 /* EntryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryTests.swift; sourceTree = "<group>"; };
+		BEAC67771CA2B930004D2EFE /* Vocabulaire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vocabulaire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEAC67801CA2B930004D2EFE /* Vocabulaire iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vocabulaire iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECA57291CA07E6300757379 /* ForeignLexeme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForeignLexeme.swift; sourceTree = "<group>"; };
 		BECA572B1CA07EB700757379 /* NativeLexeme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeLexeme.swift; sourceTree = "<group>"; };
 		BEDE05CA1CA05C4E00D04EF7 /* Vocabulaire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vocabulaire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +74,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BEAC67731CA2B930004D2EFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAC677D1CA2B930004D2EFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEAC67811CA2B930004D2EFE /* Vocabulaire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEDE05C61CA05C4E00D04EF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -125,6 +162,8 @@
 			children = (
 				BEDE05CA1CA05C4E00D04EF7 /* Vocabulaire.framework */,
 				BEDE05D41CA05C4F00D04EF7 /* VocabulaireTests.xctest */,
+				BEAC67771CA2B930004D2EFE /* Vocabulaire.framework */,
+				BEAC67801CA2B930004D2EFE /* Vocabulaire iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,6 +190,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		BEAC67741CA2B930004D2EFE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEAC678E1CA2B96E004D2EFE /* QuCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEDE05C71CA05C4E00D04EF7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -162,6 +209,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		BEAC67761CA2B930004D2EFE /* Vocabulaire iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEAC67881CA2B930004D2EFE /* Build configuration list for PBXNativeTarget "Vocabulaire iOS" */;
+			buildPhases = (
+				BEAC67721CA2B930004D2EFE /* Sources */,
+				BEAC67731CA2B930004D2EFE /* Frameworks */,
+				BEAC67741CA2B930004D2EFE /* Headers */,
+				BEAC67751CA2B930004D2EFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vocabulaire iOS";
+			productName = "Vocabulaire iOS";
+			productReference = BEAC67771CA2B930004D2EFE /* Vocabulaire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BEAC677F1CA2B930004D2EFE /* Vocabulaire iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEAC678B1CA2B930004D2EFE /* Build configuration list for PBXNativeTarget "Vocabulaire iOSTests" */;
+			buildPhases = (
+				BEAC677C1CA2B930004D2EFE /* Sources */,
+				BEAC677D1CA2B930004D2EFE /* Frameworks */,
+				BEAC677E1CA2B930004D2EFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEAC67831CA2B930004D2EFE /* PBXTargetDependency */,
+			);
+			name = "Vocabulaire iOSTests";
+			productName = "Vocabulaire iOSTests";
+			productReference = BEAC67801CA2B930004D2EFE /* Vocabulaire iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BEDE05C91CA05C4E00D04EF7 /* Vocabulaire */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEDE05DE1CA05C4F00D04EF7 /* Build configuration list for PBXNativeTarget "Vocabulaire" */;
@@ -204,10 +287,16 @@
 		BEDE05C11CA05C4E00D04EF7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Oleg Dreyman";
 				TargetAttributes = {
+					BEAC67761CA2B930004D2EFE = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					BEAC677F1CA2B930004D2EFE = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					BEDE05C91CA05C4E00D04EF7 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
@@ -230,11 +319,27 @@
 			targets = (
 				BEDE05C91CA05C4E00D04EF7 /* Vocabulaire */,
 				BEDE05D31CA05C4F00D04EF7 /* VocabulaireTests */,
+				BEAC67761CA2B930004D2EFE /* Vocabulaire iOS */,
+				BEAC677F1CA2B930004D2EFE /* Vocabulaire iOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BEAC67751CA2B930004D2EFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAC677E1CA2B930004D2EFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEDE05C81CA05C4E00D04EF7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -252,6 +357,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BEAC67721CA2B930004D2EFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEAC67951CA2B9C7004D2EFE /* NativeLexeme.swift in Sources */,
+				BEAC67921CA2B9BF004D2EFE /* Entry.swift in Sources */,
+				BEAC67961CA2B9CB004D2EFE /* Word.swift in Sources */,
+				BEAC67931CA2B9C2004D2EFE /* Lexeme.swift in Sources */,
+				BEAC67971CA2B9CB004D2EFE /* GeneralWord.swift in Sources */,
+				BEAC67981CA2B9CB004D2EFE /* CaseSensitiveWord.swift in Sources */,
+				BEAC67991CA2B9CB004D2EFE /* Prioritied.swift in Sources */,
+				BEAC67941CA2B9C4004D2EFE /* ForeignLexeme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAC677C1CA2B930004D2EFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEAC67901CA2B996004D2EFE /* CaseSensitiveWordTests.swift in Sources */,
+				BEAC678F1CA2B996004D2EFE /* GeneralWordTests.swift in Sources */,
+				BEAC67911CA2B996004D2EFE /* EntryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEDE05C51CA05C4E00D04EF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -280,6 +410,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BEAC67831CA2B930004D2EFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEAC67761CA2B930004D2EFE /* Vocabulaire iOS */;
+			targetProxy = BEAC67821CA2B930004D2EFE /* PBXContainerItemProxy */;
+		};
 		BEDE05D71CA05C4F00D04EF7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BEDE05C91CA05C4E00D04EF7 /* Vocabulaire */;
@@ -288,6 +423,80 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		BEAC67891CA2B930004D2EFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreymonde.Vocabulaire;
+				PRODUCT_NAME = Vocabulaire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEAC678A1CA2B930004D2EFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreymonde.Vocabulaire;
+				PRODUCT_NAME = Vocabulaire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEAC678C1CA2B930004D2EFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dreymonde.Vocabulaire-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BEAC678D1CA2B930004D2EFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dreymonde.Vocabulaire-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		BEDE05DC1CA05C4F00D04EF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -442,6 +651,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BEAC67881CA2B930004D2EFE /* Build configuration list for PBXNativeTarget "Vocabulaire iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEAC67891CA2B930004D2EFE /* Debug */,
+				BEAC678A1CA2B930004D2EFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BEAC678B1CA2B930004D2EFE /* Build configuration list for PBXNativeTarget "Vocabulaire iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEAC678C1CA2B930004D2EFE /* Debug */,
+				BEAC678D1CA2B930004D2EFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		BEDE05C41CA05C4E00D04EF7 /* Build configuration list for PBXProject "Vocabulaire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

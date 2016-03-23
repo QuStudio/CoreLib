@@ -44,7 +44,7 @@ class EntryTests: XCTestCase {
     
     func testWrongSort() {
         let foreign = ForeignLexeme(lemma: GeneralWord("Manager"),
-                                    forms: nil,
+                                    forms: [],
                                     origin: GeneralWord("manager"),
                                     meaning: "A head of something",
                                     permissibility: .NotAllowed)
