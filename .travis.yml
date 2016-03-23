@@ -4,7 +4,7 @@ xcode_project: Vocabulaire.xcodeproj
 xcode_scheme: Vocabulaire Mac
 
 script:
-- xcodebuild test -project Vocabulaire.xcodeproj/ -scheme "Vocabulaire Mac" -destination 'platform=OS X,arch=x86_64' | xcpretty
+- xcodebuild test -project Vocabulaire.xcodeproj/ -scheme "Vocabulaire Mac" -destination 'platform=OS X,arch=x86_64' | xcpretty && exit ${PIPESTATUS[0]}
 
 notifications:
   slack:
