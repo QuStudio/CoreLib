@@ -12,7 +12,7 @@ public struct GeneralWord: Word {
 
     private let string: String
 
-    public init(string value: String) {
+    public init(_ value: String) {
         self.string = value
     }
 
@@ -37,15 +37,15 @@ public struct GeneralWord: Word {
 extension GeneralWord: StringLiteralConvertible {
 
     public init(stringLiteral value: StringLiteralType) {
-        self.init(string: value)
+        self.init(value)
     }
 
     public init(extendedGraphemeClusterLiteral value: String) {
-        self.init(string: value)
+        self.init(value)
     }
 
     public init(unicodeScalarLiteral value: String) {
-        self.init(string: value)
+        self.init(value)
     }
 
 }

@@ -22,18 +22,18 @@ class EntryTests: XCTestCase {
     }
 
     func testSort() {
-        let foreign = ForeignLexeme(lemma: GeneralWord(string: "Manager"),
+        let foreign = ForeignLexeme(lemma: GeneralWord("Manager"),
                                     forms: nil,
-                                    origin: GeneralWord(string: "manager"),
+                                    origin: GeneralWord("manager"),
                                     meaning: "A head of something",
                                     permissibility: .NotAllowed)
-        let native1 = NativeLexeme(lemma: GeneralWord(string: "Управляющий"),
+        let native1 = NativeLexeme(lemma: GeneralWord("Управляющий"),
                                    meaning: "",
                                    usage: .General)
-        let native2 = NativeLexeme(lemma: GeneralWord(string: "Главный"),
+        let native2 = NativeLexeme(lemma: GeneralWord("Главный"),
                                    meaning: "",
                                    usage: .Promising)
-        let native3 = NativeLexeme(lemma: GeneralWord(string: "Заведующий"),
+        let native3 = NativeLexeme(lemma: GeneralWord("Заведующий"),
                                    meaning: "",
                                    usage: .Rare)
         let natives: Set = [native1, native2, native3]
@@ -43,18 +43,18 @@ class EntryTests: XCTestCase {
     }
     
     func testWrongSort() {
-        let foreign = ForeignLexeme(lemma: GeneralWord(string: "Manager"),
+        let foreign = ForeignLexeme(lemma: GeneralWord("Manager"),
                                     forms: nil,
-                                    origin: GeneralWord(string: "manager"),
+                                    origin: GeneralWord("manager"),
                                     meaning: "A head of something",
                                     permissibility: .NotAllowed)
-        let native1 = NativeLexeme(lemma: GeneralWord(string: "Управляющий"),
+        let native1 = NativeLexeme(lemma: GeneralWord("Управляющий"),
                                    meaning: "",
                                    usage: .General)
-        let native2 = NativeLexeme(lemma: GeneralWord(string: "Главный"),
+        let native2 = NativeLexeme(lemma: GeneralWord("Главный"),
                                    meaning: "",
                                    usage: .Promising)
-        let native3 = NativeLexeme(lemma: GeneralWord(string: "Заведующий"),
+        let native3 = NativeLexeme(lemma: GeneralWord("Заведующий"),
                                    meaning: "",
                                    usage: .Rare)
         let natives: Set = [native1, native2, native3]

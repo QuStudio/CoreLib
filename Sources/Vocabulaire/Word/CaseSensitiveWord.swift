@@ -10,7 +10,7 @@ import Foundation
 
 public struct CaseSensitiveWord: Word {
 
-    public init(string value: String) {
+    public init(_ value: String) {
         self.view = value
     }
     public let view: String
@@ -21,15 +21,15 @@ public struct CaseSensitiveWord: Word {
 extension CaseSensitiveWord: StringLiteralConvertible {
 
     public init(stringLiteral value: StringLiteralType) {
-        self.init(string: value)
+        self.init(value)
     }
 
     public init(extendedGraphemeClusterLiteral value: String) {
-        self.init(string: value)
+        self.init(value)
     }
 
     public init(unicodeScalarLiteral value: String) {
-        self.init(string: value)
+        self.init(value)
     }
 
 }

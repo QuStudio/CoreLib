@@ -30,7 +30,7 @@ class GeneralWordTests: XCTestCase {
     
     func testInequality() {
         let firstWord: GeneralWord = "hello"
-        let secondWord = GeneralWord(string: "swift")
+        let secondWord = GeneralWord("swift")
         XCTAssertNotEqual(firstWord, secondWord)
     }
     

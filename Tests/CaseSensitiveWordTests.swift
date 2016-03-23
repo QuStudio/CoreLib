@@ -39,7 +39,7 @@ class CaseSensitiveWordTests: XCTestCase {
     }
     
     func testNotEquality() {
-        let word = CaseSensitiveWord(string: "USPS")
+        let word = CaseSensitiveWord("USPS")
         XCTAssertNotEqual(word.view, "usps")
     }
     

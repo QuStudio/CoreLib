@@ -34,7 +34,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BEDE05D31CA05C4F00D04EF7"
-               BuildableName = "Vocabulaire.xctest"
+               BuildableName = "VocabulaireTests.xctest"
                BlueprintName = "VocabulaireTests"
                ReferencedContainer = "container:Vocabulaire.xcodeproj">
             </BuildableReference>

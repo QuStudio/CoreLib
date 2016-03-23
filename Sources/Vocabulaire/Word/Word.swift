@@ -10,7 +10,7 @@ import Foundation
 
 public protocol Word: CustomStringConvertible {
 
-    init(string value: String)
+    init(_ value: String)
     var view: String { get }
 
 }
