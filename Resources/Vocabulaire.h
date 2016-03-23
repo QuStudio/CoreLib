@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 
 //! Project version number for QuCore.
-FOUNDATION_EXPORT double QuCoreVersionNumber;
+FOUNDATION_EXPORT double VocabulaireVersionNumber;
 
 //! Project version string for QuCore.
-FOUNDATION_EXPORT const unsigned char QuCoreVersionString[];
+FOUNDATION_EXPORT const unsigned char VocabulaireVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <QuCore/PublicHeader.h>
 

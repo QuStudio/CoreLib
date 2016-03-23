@@ -15,7 +15,7 @@
 		BE83B23C1CA1F66500F80D10 /* Prioritied.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B23B1CA1F66500F80D10 /* Prioritied.swift */; };
 		BE83B23E1CA1F78100F80D10 /* EntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B23D1CA1F78100F80D10 /* EntryTests.swift */; };
 		BEAC67811CA2B930004D2EFE /* Vocabulaire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEAC67771CA2B930004D2EFE /* Vocabulaire.framework */; };
-		BEAC678E1CA2B96E004D2EFE /* QuCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDE05CD1CA05C4E00D04EF7 /* QuCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEAC678E1CA2B96E004D2EFE /* Vocabulaire.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDE05CD1CA05C4E00D04EF7 /* Vocabulaire.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEAC678F1CA2B996004D2EFE /* GeneralWordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2321CA19CB400F80D10 /* GeneralWordTests.swift */; };
 		BEAC67901CA2B996004D2EFE /* CaseSensitiveWordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2371CA1F34900F80D10 /* CaseSensitiveWordTests.swift */; };
 		BEAC67911CA2B996004D2EFE /* EntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B23D1CA1F78100F80D10 /* EntryTests.swift */; };
@@ -27,9 +27,10 @@
 		BEAC67971CA2B9CB004D2EFE /* GeneralWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2301CA1987200F80D10 /* GeneralWord.swift */; };
 		BEAC67981CA2B9CB004D2EFE /* CaseSensitiveWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B22A1CA18AAC00F80D10 /* CaseSensitiveWord.swift */; };
 		BEAC67991CA2B9CB004D2EFE /* Prioritied.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B23B1CA1F66500F80D10 /* Prioritied.swift */; };
+		BEAC67A81CA2BBE4004D2EFE /* Vocabulaire.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDE05CD1CA05C4E00D04EF7 /* Vocabulaire.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BECA572A1CA07E6300757379 /* ForeignLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA57291CA07E6300757379 /* ForeignLexeme.swift */; };
 		BECA572C1CA07EB700757379 /* NativeLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA572B1CA07EB700757379 /* NativeLexeme.swift */; };
-		BEDE05CE1CA05C4E00D04EF7 /* QuCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDE05CD1CA05C4E00D04EF7 /* QuCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEDE05CE1CA05C4E00D04EF7 /* Vocabulaire.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDE05CD1CA05C4E00D04EF7 /* Vocabulaire.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEDE05D51CA05C4F00D04EF7 /* Vocabulaire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDE05CA1CA05C4E00D04EF7 /* Vocabulaire.framework */; };
 		BEDE05E51CA05E5900D04EF7 /* Lexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE05E41CA05E5900D04EF7 /* Lexeme.swift */; };
 		BEDE05E71CA0787F00D04EF7 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE05E61CA0787F00D04EF7 /* Word.swift */; };
@@ -62,10 +63,11 @@
 		BE83B23D1CA1F78100F80D10 /* EntryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryTests.swift; sourceTree = "<group>"; };
 		BEAC67771CA2B930004D2EFE /* Vocabulaire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vocabulaire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEAC67801CA2B930004D2EFE /* Vocabulaire iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vocabulaire iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEAC679F1CA2BB5C004D2EFE /* Vocabulaire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vocabulaire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECA57291CA07E6300757379 /* ForeignLexeme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForeignLexeme.swift; sourceTree = "<group>"; };
 		BECA572B1CA07EB700757379 /* NativeLexeme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeLexeme.swift; sourceTree = "<group>"; };
 		BEDE05CA1CA05C4E00D04EF7 /* Vocabulaire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vocabulaire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEDE05CD1CA05C4E00D04EF7 /* QuCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuCore.h; sourceTree = "<group>"; };
+		BEDE05CD1CA05C4E00D04EF7 /* Vocabulaire.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vocabulaire.h; sourceTree = "<group>"; };
 		BEDE05CF1CA05C4E00D04EF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEDE05D41CA05C4F00D04EF7 /* VocabulaireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VocabulaireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDE05DB1CA05C4F00D04EF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,6 +88,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEAC67811CA2B930004D2EFE /* Vocabulaire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAC679B1CA2BB5C004D2EFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				BEDE05CF1CA05C4E00D04EF7 /* Info.plist */,
-				BEDE05CD1CA05C4E00D04EF7 /* QuCore.h */,
+				BEDE05CD1CA05C4E00D04EF7 /* Vocabulaire.h */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -164,6 +173,7 @@
 				BEDE05D41CA05C4F00D04EF7 /* VocabulaireTests.xctest */,
 				BEAC67771CA2B930004D2EFE /* Vocabulaire.framework */,
 				BEAC67801CA2B930004D2EFE /* Vocabulaire iOSTests.xctest */,
+				BEAC679F1CA2BB5C004D2EFE /* Vocabulaire.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,7 +204,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEAC678E1CA2B96E004D2EFE /* QuCore.h in Headers */,
+				BEAC678E1CA2B96E004D2EFE /* Vocabulaire.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAC679C1CA2BB5C004D2EFE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEAC67A81CA2BBE4004D2EFE /* Vocabulaire.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +220,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEDE05CE1CA05C4E00D04EF7 /* QuCore.h in Headers */,
+				BEDE05CE1CA05C4E00D04EF7 /* Vocabulaire.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +262,24 @@
 			productName = "Vocabulaire iOSTests";
 			productReference = BEAC67801CA2B930004D2EFE /* Vocabulaire iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BEAC679E1CA2BB5C004D2EFE /* Vocabulaire watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEAC67A61CA2BB5C004D2EFE /* Build configuration list for PBXNativeTarget "Vocabulaire watchOS" */;
+			buildPhases = (
+				BEAC679A1CA2BB5C004D2EFE /* Sources */,
+				BEAC679B1CA2BB5C004D2EFE /* Frameworks */,
+				BEAC679C1CA2BB5C004D2EFE /* Headers */,
+				BEAC679D1CA2BB5C004D2EFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vocabulaire watchOS";
+			productName = "Vocabulaire watchOS";
+			productReference = BEAC679F1CA2BB5C004D2EFE /* Vocabulaire.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		BEDE05C91CA05C4E00D04EF7 /* Vocabulaire */ = {
 			isa = PBXNativeTarget;
@@ -297,6 +333,9 @@
 					BEAC677F1CA2B930004D2EFE = {
 						CreatedOnToolsVersion = 7.3;
 					};
+					BEAC679E1CA2BB5C004D2EFE = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					BEDE05C91CA05C4E00D04EF7 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
@@ -321,6 +360,7 @@
 				BEDE05D31CA05C4F00D04EF7 /* VocabulaireTests */,
 				BEAC67761CA2B930004D2EFE /* Vocabulaire iOS */,
 				BEAC677F1CA2B930004D2EFE /* Vocabulaire iOSTests */,
+				BEAC679E1CA2BB5C004D2EFE /* Vocabulaire watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -334,6 +374,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BEAC677E1CA2B930004D2EFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAC679D1CA2BB5C004D2EFE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -379,6 +426,13 @@
 				BEAC67901CA2B996004D2EFE /* CaseSensitiveWordTests.swift in Sources */,
 				BEAC678F1CA2B996004D2EFE /* GeneralWordTests.swift in Sources */,
 				BEAC67911CA2B996004D2EFE /* EntryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAC679A1CA2BB5C004D2EFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +548,49 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEAC67A41CA2BB5C004D2EFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreymonde.Vocabulaire;
+				PRODUCT_NAME = Vocabulaire;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		BEAC67A51CA2BB5C004D2EFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreymonde.Vocabulaire;
+				PRODUCT_NAME = Vocabulaire;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -658,12 +755,22 @@
 				BEAC678A1CA2B930004D2EFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEAC678B1CA2B930004D2EFE /* Build configuration list for PBXNativeTarget "Vocabulaire iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BEAC678C1CA2B930004D2EFE /* Debug */,
 				BEAC678D1CA2B930004D2EFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEAC67A61CA2BB5C004D2EFE /* Build configuration list for PBXNativeTarget "Vocabulaire watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEAC67A41CA2BB5C004D2EFE /* Debug */,
+				BEAC67A51CA2BB5C004D2EFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
