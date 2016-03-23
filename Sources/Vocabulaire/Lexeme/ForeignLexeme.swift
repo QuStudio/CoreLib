@@ -28,3 +28,13 @@ public struct ForeignLexeme: Lexeme {
     }
 
 }
+
+extension ForeignLexeme: Equatable { }
+
+public func == (left: ForeignLexeme, right: ForeignLexeme) -> Bool {
+    return left.lemma.view == right.lemma.view &&
+        left.forms.map({ $0.view }) == right.forms.map({ $0.view }) &&
+        left.origin.view == right.origin.view &&
+        left.meaning == right.meaning &&
+        left.permissibility == right.permissibility
+}

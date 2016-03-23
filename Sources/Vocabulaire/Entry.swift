@@ -24,6 +24,15 @@ public struct Entry {
     
 }
 
+extension Entry: Equatable { }
+
+public func == (left: Entry, right: Entry) -> Bool {
+    return left.id == right.id &&
+        left.foreign == right.foreign &&
+        left.natives == right.natives &&
+        left.author == right.author
+}
+
 extension Entry {
     
     public var nativesByUsage: [NativeLexeme] {

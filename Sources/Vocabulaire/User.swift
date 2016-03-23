@@ -20,3 +20,9 @@ public struct User {
     }
     
 }
+
+extension User: Equatable { }
+
+public func == (left: User, right: User) -> Bool {
+    return left.id == right.id && left.username == right.username && left.status == right.status
+}

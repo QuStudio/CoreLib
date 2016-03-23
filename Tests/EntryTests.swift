@@ -20,6 +20,11 @@ class EntryTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
+    
+    func entry(forName name: Vocabulaire.Word, permissibility: ForeignLexeme.Permissibility) -> Entry {
+        let foreign = ForeignLexeme(lemma: name, forms: [], origin: name, meaning: "", permissibility: permissibility)
+        return Entry(id: 1, foreign: foreign, natives: [])
+    }
 
     func testSort() {
         let foreign = ForeignLexeme(lemma: GeneralWord("Manager"),
@@ -62,6 +67,16 @@ class EntryTests: XCTestCase {
         let sortedNatives = entry.nativesByUsage
         XCTAssertNotEqual(sortedNatives, [native3, native2, native1])
         XCTAssertNotEqual(sortedNatives, [native2, native1, native3])
+    }
+    
+    func testAlphabeticalVocabulary() {
+        let entry1 = entry(forName: GeneralWord("менеджер"), permissibility: .NotAllowed)
+        let entry2 = entry(forName: GeneralWord("нонпрофит"), permissibility: .NotAllowed)
+        let entry3 = entry(forName: GeneralWord("баг"), permissibility: .Allowed)
+        let entry4 = entry(forName: CaseSensitiveWord("США"), permissibility: .NotAllowed)
+        let vocabulary: Vocabulary = [entry1, entry2, entry3, entry4]
+        let sorted = vocabulary.alphabetical
+        XCTAssertEqual(sorted, [entry3, entry1, entry2, entry4] as Vocabulary)
     }
 
 }
