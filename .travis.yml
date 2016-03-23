@@ -1,9 +1,12 @@
-language: objective-c
-osx_image: xcode7.3
-
+sudo: required
+dist: trusty
+before_install:
+- wget -q -O - https://swift.org/keys/all-keys.asc | gpg --import -
+- wget https://swift.org/builds/ubuntu1404/swift-2.2-SNAPSHOT-2015-12-22-a/swift-2.2-SNAPSHOT-2015-12-22-a-ubuntu14.04.tar.gz
+- tar xzf swift-2.2-SNAPSHOT-2015-12-22-a-ubuntu14.04.tar.gz
+- export PATH=${PWD}/swift-2.2-SNAPSHOT-2015-12-22-a-ubuntu14.04/usr/bin:"${PATH}"
 script:
-  - ./bin/tests
-
+- swift build
 notifications:
   slack:
     secure: MH1lormuljCfXddowX/DKniuX6I6GRXT+8r+I5vVxoTppxXWQEqak64OcfDzuIUi2DHkFrphz/R5s40wnH7JBf2KnU+GBFtILO3K7psfHPXmWa3s+r0sHriQEuzLarCKLeZ+pKysFr5GY4k5XObsyFSygYcvN9CIyHIcYNBVRKs2gBkebkqR5pwN6FDFfx5FBI2tTLMUbbU4+NLOSAzM998QqGDHRmi/+KZhPoT+227kEeUUectD0SesCb0ZkckDmQJMN9KGYUOA1SQPO2x6cjRiRsIFFQRTtcrPD6iUPoV7Ujxldi84mDsrumR6iL5oO/POWM9tAsoY5lPxQCfaGoq+ydnfVj7fxVOXXFHPVS20sXTcli2LT+80DwMbHAsvQ28aP3Bn86RNyqIenbhdyDlfPE0UDlIkIaZ6M5yQWOMaOjsozbCAic6Gnu9NDgUpTGXFpe5mqjOKQcxdmT3tq3SfQEsP9lpE+C2wo2aczNpSOvLeLD1npvJ/5IVcImWDrQ9RW0SrXgcwx80NRCtmRWPnjXglY/ry+aoJqv/uc5hpcr4asCwxV07hqNyYjGrfAsbj6M8zP6zG3HL2cipmz3YydKnHI2EZ+tJHXpYSwVblasiObenVE6vdAI0JwjL1uUIZzeqn/oruBUgHLnMjSaobB49zFgKtuVc0L/2XZHs=
