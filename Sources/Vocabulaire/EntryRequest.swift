@@ -13,6 +13,7 @@ public protocol EntryRequest {
     var author: User { get }
     var foreign: Word { get }
     var native: NativeWordsRequest { get }
+    var rationale: String { get }
     
 }
 
@@ -21,6 +22,7 @@ public struct ClientEntryRequest: EntryRequest {
     public let author: User
     public let foreign: Word
     public let native: NativeWordsRequest
+    public let rationale: String
     
 }
 
@@ -30,5 +32,6 @@ public struct ServerEntryRequest: EntryRequest {
     public let author: User
     public let foreign: Word
     public let native: NativeWordsRequest
+    public let rationale: String
     
 }
