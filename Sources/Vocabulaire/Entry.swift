@@ -10,9 +10,17 @@ import Foundation
 
 public struct Entry {
     
-    // maybe it should also contain some sort of ID?
+    public let id: Int
     public let foreign: ForeignLexeme
     public let natives: Set<NativeLexeme>
+    public let author: User?
+    
+    public init(id: Int, foreign: ForeignLexeme, natives: Set<NativeLexeme>, author: User? = nil) {
+        self.id = id
+        self.foreign = foreign
+        self.natives = natives
+        self.author = author
+    }
     
 }
 

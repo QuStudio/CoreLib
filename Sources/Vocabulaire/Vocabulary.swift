@@ -6,8 +6,6 @@
 //  Copyright © 2016 Oleg Dreyman. All rights reserved.
 //
 
-// TODO: Rename to Vocabulary.swfit
-
 import Foundation
 
 public typealias Vocabulary = [Entry]

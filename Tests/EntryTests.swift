@@ -37,7 +37,7 @@ class EntryTests: XCTestCase {
                                    meaning: "",
                                    usage: .Rare)
         let natives: Set = [native1, native2, native3]
-        let entry = Entry(foreign: foreign, natives: natives)
+        let entry = Entry(id: 1, foreign: foreign, natives: natives)
         let sortedNatives = entry.nativesByUsage
         XCTAssertEqual(sortedNatives, [native1, native2, native3])
     }
@@ -58,7 +58,7 @@ class EntryTests: XCTestCase {
                                    meaning: "",
                                    usage: .Rare)
         let natives: Set = [native1, native2, native3]
-        let entry = Entry(foreign: foreign, natives: natives)
+        let entry = Entry(id: 2, foreign: foreign, natives: natives)
         let sortedNatives = entry.nativesByUsage
         XCTAssertNotEqual(sortedNatives, [native3, native2, native1])
         XCTAssertNotEqual(sortedNatives, [native2, native1, native3])

@@ -28,9 +28,9 @@
 		BEAC67981CA2B9CB004D2EFE /* CaseSensitiveWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B22A1CA18AAC00F80D10 /* CaseSensitiveWord.swift */; };
 		BEAC67991CA2B9CB004D2EFE /* Prioritied.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B23B1CA1F66500F80D10 /* Prioritied.swift */; };
 		BEAC67A81CA2BBE4004D2EFE /* Vocabulaire.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDE05CD1CA05C4E00D04EF7 /* Vocabulaire.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEAC67AA1CA2BD96004D2EFE /* Vocabulaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC67A91CA2BD96004D2EFE /* Vocabulaire.swift */; };
-		BEAC67AB1CA2BD96004D2EFE /* Vocabulaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC67A91CA2BD96004D2EFE /* Vocabulaire.swift */; };
-		BEAC67AC1CA2BD96004D2EFE /* Vocabulaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC67A91CA2BD96004D2EFE /* Vocabulaire.swift */; };
+		BEAC67AA1CA2BD96004D2EFE /* Vocabulary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC67A91CA2BD96004D2EFE /* Vocabulary.swift */; };
+		BEAC67AB1CA2BD96004D2EFE /* Vocabulary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC67A91CA2BD96004D2EFE /* Vocabulary.swift */; };
+		BEAC67AC1CA2BD96004D2EFE /* Vocabulary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC67A91CA2BD96004D2EFE /* Vocabulary.swift */; };
 		BEAC67AD1CA2C085004D2EFE /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2351CA1F29900F80D10 /* Entry.swift */; };
 		BEAC67AE1CA2C089004D2EFE /* Lexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE05E41CA05E5900D04EF7 /* Lexeme.swift */; };
 		BEAC67AF1CA2C089004D2EFE /* ForeignLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA57291CA07E6300757379 /* ForeignLexeme.swift */; };
@@ -39,6 +39,15 @@
 		BEAC67B21CA2C08D004D2EFE /* GeneralWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2301CA1987200F80D10 /* GeneralWord.swift */; };
 		BEAC67B31CA2C08D004D2EFE /* CaseSensitiveWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B22A1CA18AAC00F80D10 /* CaseSensitiveWord.swift */; };
 		BEAC67B41CA2C08D004D2EFE /* Prioritied.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B23B1CA1F66500F80D10 /* Prioritied.swift */; };
+		BEAC67B81CA31F03004D2EFE /* EntryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC67B71CA31F03004D2EFE /* EntryRequest.swift */; };
+		BEAC67B91CA31F03004D2EFE /* EntryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC67B71CA31F03004D2EFE /* EntryRequest.swift */; };
+		BEAC67BA1CA31F03004D2EFE /* EntryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC67B71CA31F03004D2EFE /* EntryRequest.swift */; };
+		BEAC67BC1CA320B2004D2EFE /* NativeWordsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC67BB1CA320B2004D2EFE /* NativeWordsRequest.swift */; };
+		BEAC67BD1CA320B2004D2EFE /* NativeWordsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC67BB1CA320B2004D2EFE /* NativeWordsRequest.swift */; };
+		BEAC67BE1CA320B2004D2EFE /* NativeWordsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC67BB1CA320B2004D2EFE /* NativeWordsRequest.swift */; };
+		BEAC67C01CA320C7004D2EFE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC67BF1CA320C7004D2EFE /* User.swift */; };
+		BEAC67C11CA320C7004D2EFE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC67BF1CA320C7004D2EFE /* User.swift */; };
+		BEAC67C21CA320C7004D2EFE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC67BF1CA320C7004D2EFE /* User.swift */; };
 		BECA572A1CA07E6300757379 /* ForeignLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA57291CA07E6300757379 /* ForeignLexeme.swift */; };
 		BECA572C1CA07EB700757379 /* NativeLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA572B1CA07EB700757379 /* NativeLexeme.swift */; };
 		BEDE05CE1CA05C4E00D04EF7 /* Vocabulaire.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDE05CD1CA05C4E00D04EF7 /* Vocabulaire.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -70,12 +79,15 @@
 		BE83B2321CA19CB400F80D10 /* GeneralWordTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralWordTests.swift; sourceTree = "<group>"; };
 		BE83B2351CA1F29900F80D10 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		BE83B2371CA1F34900F80D10 /* CaseSensitiveWordTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseSensitiveWordTests.swift; sourceTree = "<group>"; };
-		BE83B23B1CA1F66500F80D10 /* Prioritied.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prioritied.swift; sourceTree = "<group>"; };
+		BE83B23B1CA1F66500F80D10 /* Prioritied.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Prioritied.swift; path = ../Prioritied.swift; sourceTree = "<group>"; };
 		BE83B23D1CA1F78100F80D10 /* EntryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryTests.swift; sourceTree = "<group>"; };
 		BEAC67771CA2B930004D2EFE /* Vocabulaire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vocabulaire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEAC67801CA2B930004D2EFE /* Vocabulaire iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vocabulaire iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEAC679F1CA2BB5C004D2EFE /* Vocabulaire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vocabulaire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEAC67A91CA2BD96004D2EFE /* Vocabulaire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vocabulaire.swift; sourceTree = "<group>"; };
+		BEAC67A91CA2BD96004D2EFE /* Vocabulary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vocabulary.swift; sourceTree = "<group>"; };
+		BEAC67B71CA31F03004D2EFE /* EntryRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryRequest.swift; sourceTree = "<group>"; };
+		BEAC67BB1CA320B2004D2EFE /* NativeWordsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeWordsRequest.swift; sourceTree = "<group>"; };
+		BEAC67BF1CA320C7004D2EFE /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BECA57291CA07E6300757379 /* ForeignLexeme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForeignLexeme.swift; sourceTree = "<group>"; };
 		BECA572B1CA07EB700757379 /* NativeLexeme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeLexeme.swift; sourceTree = "<group>"; };
 		BEDE05CA1CA05C4E00D04EF7 /* Vocabulaire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vocabulaire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +165,7 @@
 				BEDE05E41CA05E5900D04EF7 /* Lexeme.swift */,
 				BECA57291CA07E6300757379 /* ForeignLexeme.swift */,
 				BECA572B1CA07EB700757379 /* NativeLexeme.swift */,
+				BE83B23B1CA1F66500F80D10 /* Prioritied.swift */,
 			);
 			path = Lexeme;
 			sourceTree = "<group>";
@@ -160,13 +173,23 @@
 		BE83B22F1CA1974D00F80D10 /* Vocabulaire */ = {
 			isa = PBXGroup;
 			children = (
-				BEAC67A91CA2BD96004D2EFE /* Vocabulaire.swift */,
+				BEAC67A91CA2BD96004D2EFE /* Vocabulary.swift */,
 				BE83B2351CA1F29900F80D10 /* Entry.swift */,
+				BEAC67BF1CA320C7004D2EFE /* User.swift */,
 				BE83B22E1CA18AE000F80D10 /* Lexeme */,
 				BE83B22C1CA18AC300F80D10 /* Word */,
-				BE83B23B1CA1F66500F80D10 /* Prioritied.swift */,
+				BEAC67B61CA31ECD004D2EFE /* Requests */,
 			);
 			path = Vocabulaire;
+			sourceTree = "<group>";
+		};
+		BEAC67B61CA31ECD004D2EFE /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				BEAC67B71CA31F03004D2EFE /* EntryRequest.swift */,
+				BEAC67BB1CA320B2004D2EFE /* NativeWordsRequest.swift */,
+			);
+			name = Requests;
 			sourceTree = "<group>";
 		};
 		BEDE05C01CA05C4E00D04EF7 = {
@@ -423,10 +446,13 @@
 			files = (
 				BEAC67951CA2B9C7004D2EFE /* NativeLexeme.swift in Sources */,
 				BEAC67921CA2B9BF004D2EFE /* Entry.swift in Sources */,
-				BEAC67AB1CA2BD96004D2EFE /* Vocabulaire.swift in Sources */,
+				BEAC67AB1CA2BD96004D2EFE /* Vocabulary.swift in Sources */,
 				BEAC67961CA2B9CB004D2EFE /* Word.swift in Sources */,
 				BEAC67931CA2B9C2004D2EFE /* Lexeme.swift in Sources */,
+				BEAC67BD1CA320B2004D2EFE /* NativeWordsRequest.swift in Sources */,
 				BEAC67971CA2B9CB004D2EFE /* GeneralWord.swift in Sources */,
+				BEAC67B91CA31F03004D2EFE /* EntryRequest.swift in Sources */,
+				BEAC67C11CA320C7004D2EFE /* User.swift in Sources */,
 				BEAC67981CA2B9CB004D2EFE /* CaseSensitiveWord.swift in Sources */,
 				BEAC67991CA2B9CB004D2EFE /* Prioritied.swift in Sources */,
 				BEAC67941CA2B9C4004D2EFE /* ForeignLexeme.swift in Sources */,
@@ -449,10 +475,13 @@
 			files = (
 				BEAC67AF1CA2C089004D2EFE /* ForeignLexeme.swift in Sources */,
 				BEAC67AD1CA2C085004D2EFE /* Entry.swift in Sources */,
-				BEAC67AC1CA2BD96004D2EFE /* Vocabulaire.swift in Sources */,
+				BEAC67AC1CA2BD96004D2EFE /* Vocabulary.swift in Sources */,
 				BEAC67AE1CA2C089004D2EFE /* Lexeme.swift in Sources */,
 				BEAC67B31CA2C08D004D2EFE /* CaseSensitiveWord.swift in Sources */,
+				BEAC67BE1CA320B2004D2EFE /* NativeWordsRequest.swift in Sources */,
 				BEAC67B01CA2C089004D2EFE /* NativeLexeme.swift in Sources */,
+				BEAC67BA1CA31F03004D2EFE /* EntryRequest.swift in Sources */,
+				BEAC67C21CA320C7004D2EFE /* User.swift in Sources */,
 				BEAC67B21CA2C08D004D2EFE /* GeneralWord.swift in Sources */,
 				BEAC67B41CA2C08D004D2EFE /* Prioritied.swift in Sources */,
 				BEAC67B11CA2C08D004D2EFE /* Word.swift in Sources */,
@@ -465,10 +494,13 @@
 			files = (
 				BE83B2361CA1F29900F80D10 /* Entry.swift in Sources */,
 				BECA572C1CA07EB700757379 /* NativeLexeme.swift in Sources */,
-				BEAC67AA1CA2BD96004D2EFE /* Vocabulaire.swift in Sources */,
+				BEAC67AA1CA2BD96004D2EFE /* Vocabulary.swift in Sources */,
 				BEDE05E51CA05E5900D04EF7 /* Lexeme.swift in Sources */,
 				BEDE05E71CA0787F00D04EF7 /* Word.swift in Sources */,
+				BEAC67BC1CA320B2004D2EFE /* NativeWordsRequest.swift in Sources */,
 				BE83B22B1CA18AAC00F80D10 /* CaseSensitiveWord.swift in Sources */,
+				BEAC67B81CA31F03004D2EFE /* EntryRequest.swift in Sources */,
+				BEAC67C01CA320C7004D2EFE /* User.swift in Sources */,
 				BE83B2311CA1987200F80D10 /* GeneralWord.swift in Sources */,
 				BE83B23C1CA1F66500F80D10 /* Prioritied.swift in Sources */,
 				BECA572A1CA07E6300757379 /* ForeignLexeme.swift in Sources */,
