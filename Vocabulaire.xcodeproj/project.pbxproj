@@ -28,6 +28,9 @@
 		BEAC67981CA2B9CB004D2EFE /* CaseSensitiveWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B22A1CA18AAC00F80D10 /* CaseSensitiveWord.swift */; };
 		BEAC67991CA2B9CB004D2EFE /* Prioritied.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B23B1CA1F66500F80D10 /* Prioritied.swift */; };
 		BEAC67A81CA2BBE4004D2EFE /* Vocabulaire.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDE05CD1CA05C4E00D04EF7 /* Vocabulaire.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEAC67AA1CA2BD96004D2EFE /* Vocabulaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC67A91CA2BD96004D2EFE /* Vocabulaire.swift */; };
+		BEAC67AB1CA2BD96004D2EFE /* Vocabulaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC67A91CA2BD96004D2EFE /* Vocabulaire.swift */; };
+		BEAC67AC1CA2BD96004D2EFE /* Vocabulaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC67A91CA2BD96004D2EFE /* Vocabulaire.swift */; };
 		BECA572A1CA07E6300757379 /* ForeignLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA57291CA07E6300757379 /* ForeignLexeme.swift */; };
 		BECA572C1CA07EB700757379 /* NativeLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA572B1CA07EB700757379 /* NativeLexeme.swift */; };
 		BEDE05CE1CA05C4E00D04EF7 /* Vocabulaire.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDE05CD1CA05C4E00D04EF7 /* Vocabulaire.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -64,6 +67,7 @@
 		BEAC67771CA2B930004D2EFE /* Vocabulaire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vocabulaire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEAC67801CA2B930004D2EFE /* Vocabulaire iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vocabulaire iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEAC679F1CA2BB5C004D2EFE /* Vocabulaire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vocabulaire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEAC67A91CA2BD96004D2EFE /* Vocabulaire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vocabulaire.swift; sourceTree = "<group>"; };
 		BECA57291CA07E6300757379 /* ForeignLexeme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForeignLexeme.swift; sourceTree = "<group>"; };
 		BECA572B1CA07EB700757379 /* NativeLexeme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeLexeme.swift; sourceTree = "<group>"; };
 		BEDE05CA1CA05C4E00D04EF7 /* Vocabulaire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vocabulaire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +152,7 @@
 		BE83B22F1CA1974D00F80D10 /* Vocabulaire */ = {
 			isa = PBXGroup;
 			children = (
+				BEAC67A91CA2BD96004D2EFE /* Vocabulaire.swift */,
 				BE83B2351CA1F29900F80D10 /* Entry.swift */,
 				BE83B22E1CA18AE000F80D10 /* Lexeme */,
 				BE83B22C1CA18AC300F80D10 /* Word */,
@@ -410,6 +415,7 @@
 			files = (
 				BEAC67951CA2B9C7004D2EFE /* NativeLexeme.swift in Sources */,
 				BEAC67921CA2B9BF004D2EFE /* Entry.swift in Sources */,
+				BEAC67AB1CA2BD96004D2EFE /* Vocabulaire.swift in Sources */,
 				BEAC67961CA2B9CB004D2EFE /* Word.swift in Sources */,
 				BEAC67931CA2B9C2004D2EFE /* Lexeme.swift in Sources */,
 				BEAC67971CA2B9CB004D2EFE /* GeneralWord.swift in Sources */,
@@ -433,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEAC67AC1CA2BD96004D2EFE /* Vocabulaire.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +449,7 @@
 			files = (
 				BE83B2361CA1F29900F80D10 /* Entry.swift in Sources */,
 				BECA572C1CA07EB700757379 /* NativeLexeme.swift in Sources */,
+				BEAC67AA1CA2BD96004D2EFE /* Vocabulaire.swift in Sources */,
 				BEDE05E51CA05E5900D04EF7 /* Lexeme.swift in Sources */,
 				BEDE05E71CA0787F00D04EF7 /* Word.swift in Sources */,
 				BE83B22B1CA18AAC00F80D10 /* CaseSensitiveWord.swift in Sources */,
@@ -556,6 +564,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -567,6 +576,7 @@
 				PRODUCT_NAME = Vocabulaire;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -577,6 +587,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -773,6 +784,7 @@
 				BEAC67A51CA2BB5C004D2EFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEDE05C41CA05C4E00D04EF7 /* Build configuration list for PBXProject "Vocabulaire" */ = {
 			isa = XCConfigurationList;
