@@ -31,6 +31,14 @@
 		BEAC67AA1CA2BD96004D2EFE /* Vocabulaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC67A91CA2BD96004D2EFE /* Vocabulaire.swift */; };
 		BEAC67AB1CA2BD96004D2EFE /* Vocabulaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC67A91CA2BD96004D2EFE /* Vocabulaire.swift */; };
 		BEAC67AC1CA2BD96004D2EFE /* Vocabulaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC67A91CA2BD96004D2EFE /* Vocabulaire.swift */; };
+		BEAC67AD1CA2C085004D2EFE /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2351CA1F29900F80D10 /* Entry.swift */; };
+		BEAC67AE1CA2C089004D2EFE /* Lexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE05E41CA05E5900D04EF7 /* Lexeme.swift */; };
+		BEAC67AF1CA2C089004D2EFE /* ForeignLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA57291CA07E6300757379 /* ForeignLexeme.swift */; };
+		BEAC67B01CA2C089004D2EFE /* NativeLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA572B1CA07EB700757379 /* NativeLexeme.swift */; };
+		BEAC67B11CA2C08D004D2EFE /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE05E61CA0787F00D04EF7 /* Word.swift */; };
+		BEAC67B21CA2C08D004D2EFE /* GeneralWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2301CA1987200F80D10 /* GeneralWord.swift */; };
+		BEAC67B31CA2C08D004D2EFE /* CaseSensitiveWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B22A1CA18AAC00F80D10 /* CaseSensitiveWord.swift */; };
+		BEAC67B41CA2C08D004D2EFE /* Prioritied.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B23B1CA1F66500F80D10 /* Prioritied.swift */; };
 		BECA572A1CA07E6300757379 /* ForeignLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA57291CA07E6300757379 /* ForeignLexeme.swift */; };
 		BECA572C1CA07EB700757379 /* NativeLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA572B1CA07EB700757379 /* NativeLexeme.swift */; };
 		BEDE05CE1CA05C4E00D04EF7 /* Vocabulaire.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDE05CD1CA05C4E00D04EF7 /* Vocabulaire.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -439,7 +447,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEAC67AF1CA2C089004D2EFE /* ForeignLexeme.swift in Sources */,
+				BEAC67AD1CA2C085004D2EFE /* Entry.swift in Sources */,
 				BEAC67AC1CA2BD96004D2EFE /* Vocabulaire.swift in Sources */,
+				BEAC67AE1CA2C089004D2EFE /* Lexeme.swift in Sources */,
+				BEAC67B31CA2C08D004D2EFE /* CaseSensitiveWord.swift in Sources */,
+				BEAC67B01CA2C089004D2EFE /* NativeLexeme.swift in Sources */,
+				BEAC67B21CA2C08D004D2EFE /* GeneralWord.swift in Sources */,
+				BEAC67B41CA2C08D004D2EFE /* Prioritied.swift in Sources */,
+				BEAC67B11CA2C08D004D2EFE /* Word.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
