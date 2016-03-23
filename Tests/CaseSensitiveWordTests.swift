@@ -21,7 +21,7 @@ class CaseSensitiveWordTests: XCTestCase {
         super.tearDown()
     }
 
-    func testEquality() {
+    func testViewEqual() {
         let word: CaseSensitiveWord = "USA"
         XCTAssertEqual(word.view, "USA")
     }
@@ -38,7 +38,7 @@ class CaseSensitiveWordTests: XCTestCase {
         XCTAssertFalse(first == second)
     }
     
-    func testNotEquality() {
+    func testViewNotEqual() {
         let word = CaseSensitiveWord("USPS")
         XCTAssertNotEqual(word.view, "usps")
     }

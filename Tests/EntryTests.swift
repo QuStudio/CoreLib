@@ -23,7 +23,7 @@ class EntryTests: XCTestCase {
 
     func testSort() {
         let foreign = ForeignLexeme(lemma: GeneralWord("Manager"),
-                                    forms: nil,
+                                    forms: [],
                                     origin: GeneralWord("manager"),
                                     meaning: "A head of something",
                                     permissibility: .NotAllowed)
@@ -61,6 +61,7 @@ class EntryTests: XCTestCase {
         let entry = Entry(foreign: foreign, natives: natives)
         let sortedNatives = entry.nativesByUsage
         XCTAssertNotEqual(sortedNatives, [native3, native2, native1])
+        XCTAssertNotEqual(sortedNatives, [native2, native1, native3])
     }
 
 }

@@ -21,14 +21,14 @@ class GeneralWordTests: XCTestCase {
         super.tearDown()
     }
     
-    func testEquality() {
+    func testEqual() {
         let firstWord: GeneralWord = "hello"
         let secondWord: GeneralWord = "Hello"
         XCTAssertEqual(firstWord, secondWord)
         XCTAssertTrue(firstWord == secondWord)
     }
     
-    func testInequality() {
+    func testNotEqual() {
         let firstWord: GeneralWord = "hello"
         let secondWord = GeneralWord("swift")
         XCTAssertNotEqual(firstWord, secondWord)
