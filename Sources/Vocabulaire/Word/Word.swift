@@ -8,14 +8,14 @@
 
 import Foundation
 
-public protocol Word: CustomStringConvertible {
+public protocol Morpheme: CustomStringConvertible {
 
     init(_ value: String)
     var view: String { get }
 
 }
 
-extension Word {
+extension Morpheme {
 
     public var description: String {
         return view

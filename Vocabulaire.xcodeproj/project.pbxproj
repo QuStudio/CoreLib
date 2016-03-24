@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		BE83B22B1CA18AAC00F80D10 /* CaseSensitiveWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B22A1CA18AAC00F80D10 /* CaseSensitiveWord.swift */; };
 		BE83B2311CA1987200F80D10 /* GeneralWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2301CA1987200F80D10 /* GeneralWord.swift */; };
-		BE83B2341CA19D0F00F80D10 /* GeneralWordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2321CA19CB400F80D10 /* GeneralWordTests.swift */; };
+		BE83B2341CA19D0F00F80D10 /* GeneralMorphemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2321CA19CB400F80D10 /* GeneralMorphemeTests.swift */; };
 		BE83B2361CA1F29900F80D10 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2351CA1F29900F80D10 /* Entry.swift */; };
-		BE83B2381CA1F34900F80D10 /* CaseSensitiveWordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2371CA1F34900F80D10 /* CaseSensitiveWordTests.swift */; };
+		BE83B2381CA1F34900F80D10 /* CaseSensitiveMorphemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2371CA1F34900F80D10 /* CaseSensitiveMorphemeTests.swift */; };
 		BE83B23C1CA1F66500F80D10 /* Prioritied.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B23B1CA1F66500F80D10 /* Prioritied.swift */; };
 		BE83B23E1CA1F78100F80D10 /* EntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B23D1CA1F78100F80D10 /* EntryTests.swift */; };
 		BEAC67811CA2B930004D2EFE /* Vocabulaire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEAC67771CA2B930004D2EFE /* Vocabulaire.framework */; };
 		BEAC678E1CA2B96E004D2EFE /* Vocabulaire.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDE05CD1CA05C4E00D04EF7 /* Vocabulaire.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEAC678F1CA2B996004D2EFE /* GeneralWordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2321CA19CB400F80D10 /* GeneralWordTests.swift */; };
-		BEAC67901CA2B996004D2EFE /* CaseSensitiveWordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2371CA1F34900F80D10 /* CaseSensitiveWordTests.swift */; };
+		BEAC678F1CA2B996004D2EFE /* GeneralMorphemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2321CA19CB400F80D10 /* GeneralMorphemeTests.swift */; };
+		BEAC67901CA2B996004D2EFE /* CaseSensitiveMorphemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2371CA1F34900F80D10 /* CaseSensitiveMorphemeTests.swift */; };
 		BEAC67911CA2B996004D2EFE /* EntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B23D1CA1F78100F80D10 /* EntryTests.swift */; };
 		BEAC67921CA2B9BF004D2EFE /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2351CA1F29900F80D10 /* Entry.swift */; };
 		BEAC67931CA2B9C2004D2EFE /* Lexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE05E41CA05E5900D04EF7 /* Lexeme.swift */; };
@@ -76,9 +76,9 @@
 /* Begin PBXFileReference section */
 		BE83B22A1CA18AAC00F80D10 /* CaseSensitiveWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseSensitiveWord.swift; sourceTree = "<group>"; };
 		BE83B2301CA1987200F80D10 /* GeneralWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralWord.swift; sourceTree = "<group>"; };
-		BE83B2321CA19CB400F80D10 /* GeneralWordTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralWordTests.swift; sourceTree = "<group>"; };
+		BE83B2321CA19CB400F80D10 /* GeneralMorphemeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralMorphemeTests.swift; sourceTree = "<group>"; };
 		BE83B2351CA1F29900F80D10 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
-		BE83B2371CA1F34900F80D10 /* CaseSensitiveWordTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseSensitiveWordTests.swift; sourceTree = "<group>"; };
+		BE83B2371CA1F34900F80D10 /* CaseSensitiveMorphemeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseSensitiveMorphemeTests.swift; sourceTree = "<group>"; };
 		BE83B23B1CA1F66500F80D10 /* Prioritied.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Prioritied.swift; path = ../Prioritied.swift; sourceTree = "<group>"; };
 		BE83B23D1CA1F78100F80D10 /* EntryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryTests.swift; sourceTree = "<group>"; };
 		BEAC67771CA2B930004D2EFE /* Vocabulaire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vocabulaire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,8 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				BEDE05DB1CA05C4F00D04EF7 /* Info.plist */,
-				BE83B2321CA19CB400F80D10 /* GeneralWordTests.swift */,
-				BE83B2371CA1F34900F80D10 /* CaseSensitiveWordTests.swift */,
+				BE83B2321CA19CB400F80D10 /* GeneralMorphemeTests.swift */,
+				BE83B2371CA1F34900F80D10 /* CaseSensitiveMorphemeTests.swift */,
 				BE83B23D1CA1F78100F80D10 /* EntryTests.swift */,
 			);
 			path = Tests;
@@ -463,8 +463,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEAC67901CA2B996004D2EFE /* CaseSensitiveWordTests.swift in Sources */,
-				BEAC678F1CA2B996004D2EFE /* GeneralWordTests.swift in Sources */,
+				BEAC67901CA2B996004D2EFE /* CaseSensitiveMorphemeTests.swift in Sources */,
+				BEAC678F1CA2B996004D2EFE /* GeneralMorphemeTests.swift in Sources */,
 				BEAC67911CA2B996004D2EFE /* EntryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,8 +511,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE83B2381CA1F34900F80D10 /* CaseSensitiveWordTests.swift in Sources */,
-				BE83B2341CA19D0F00F80D10 /* GeneralWordTests.swift in Sources */,
+				BE83B2381CA1F34900F80D10 /* CaseSensitiveMorphemeTests.swift in Sources */,
+				BE83B2341CA19D0F00F80D10 /* GeneralMorphemeTests.swift in Sources */,
 				BE83B23E1CA1F78100F80D10 /* EntryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

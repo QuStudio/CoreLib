@@ -10,7 +10,7 @@ import Foundation
 
 public struct NativeLexeme: Lexeme {
 
-    public let lemma: Word
+    public let lemma: Morpheme
     public let meaning: String
     public let usage: Usage
 

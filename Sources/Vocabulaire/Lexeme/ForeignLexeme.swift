@@ -10,9 +10,9 @@ import Foundation
 
 public struct ForeignLexeme: Lexeme {
 
-    public let lemma: Word
-    public let forms: [Word]
-    public let origin: Word
+    public let lemma: Morpheme
+    public let forms: [Morpheme]
+    public let origin: Morpheme
     public let meaning: String
     public let permissibility: Permissibility
     

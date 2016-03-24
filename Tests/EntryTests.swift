@@ -21,24 +21,24 @@ class EntryTests: XCTestCase {
         super.tearDown()
     }
     
-    func entry(forName name: Vocabulaire.Word, permissibility: ForeignLexeme.Permissibility) -> Entry {
+    func entry(forName name: Morpheme, permissibility: ForeignLexeme.Permissibility) -> Entry {
         let foreign = ForeignLexeme(lemma: name, forms: [], origin: name, meaning: "", permissibility: permissibility)
         return Entry(id: 1, foreign: foreign, natives: [])
     }
 
     func testSort() {
-        let foreign = ForeignLexeme(lemma: GeneralWord("Manager"),
+        let foreign = ForeignLexeme(lemma: GeneralMorpheme("Manager"),
                                     forms: [],
-                                    origin: GeneralWord("manager"),
+                                    origin: GeneralMorpheme("manager"),
                                     meaning: "A head of something",
                                     permissibility: .NotAllowed)
-        let native1 = NativeLexeme(lemma: GeneralWord("Управляющий"),
+        let native1 = NativeLexeme(lemma: GeneralMorpheme("Управляющий"),
                                    meaning: "",
                                    usage: .General)
-        let native2 = NativeLexeme(lemma: GeneralWord("Главный"),
+        let native2 = NativeLexeme(lemma: GeneralMorpheme("Главный"),
                                    meaning: "",
                                    usage: .Promising)
-        let native3 = NativeLexeme(lemma: GeneralWord("Заведующий"),
+        let native3 = NativeLexeme(lemma: GeneralMorpheme("Заведующий"),
                                    meaning: "",
                                    usage: .Rare)
         let natives: Set = [native1, native2, native3]
@@ -48,18 +48,18 @@ class EntryTests: XCTestCase {
     }
     
     func testWrongSort() {
-        let foreign = ForeignLexeme(lemma: GeneralWord("Manager"),
+        let foreign = ForeignLexeme(lemma: GeneralMorpheme("Manager"),
                                     forms: [],
-                                    origin: GeneralWord("manager"),
+                                    origin: GeneralMorpheme("manager"),
                                     meaning: "A head of something",
                                     permissibility: .NotAllowed)
-        let native1 = NativeLexeme(lemma: GeneralWord("Управляющий"),
+        let native1 = NativeLexeme(lemma: GeneralMorpheme("Управляющий"),
                                    meaning: "",
                                    usage: .General)
-        let native2 = NativeLexeme(lemma: GeneralWord("Главный"),
+        let native2 = NativeLexeme(lemma: GeneralMorpheme("Главный"),
                                    meaning: "",
                                    usage: .Promising)
-        let native3 = NativeLexeme(lemma: GeneralWord("Заведующий"),
+        let native3 = NativeLexeme(lemma: GeneralMorpheme("Заведующий"),
                                    meaning: "",
                                    usage: .Rare)
         let natives: Set = [native1, native2, native3]
@@ -70,10 +70,10 @@ class EntryTests: XCTestCase {
     }
     
     func testAlphabeticalVocabulary() {
-        let entry1 = entry(forName: GeneralWord("менеджер"), permissibility: .NotAllowed)
-        let entry2 = entry(forName: GeneralWord("нонпрофит"), permissibility: .NotAllowed)
-        let entry3 = entry(forName: GeneralWord("баг"), permissibility: .Allowed)
-        let entry4 = entry(forName: CaseSensitiveWord("США"), permissibility: .NotAllowed)
+        let entry1 = entry(forName: GeneralMorpheme("менеджер"), permissibility: .NotAllowed)
+        let entry2 = entry(forName: GeneralMorpheme("нонпрофит"), permissibility: .NotAllowed)
+        let entry3 = entry(forName: GeneralMorpheme("баг"), permissibility: .Allowed)
+        let entry4 = entry(forName: CaseSensitiveMorpheme("США"), permissibility: .NotAllowed)
         let vocabulary: Vocabulary = [entry1, entry2, entry3, entry4]
         let sorted = vocabulary.alphabetical
         XCTAssertEqual(sorted, [entry3, entry1, entry2, entry4] as Vocabulary)

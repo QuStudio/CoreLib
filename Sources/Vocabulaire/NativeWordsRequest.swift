@@ -10,7 +10,7 @@ import Foundation
 
 public struct NativeWordsRequest {
     
-    public let main: Word
-    public let alternatives: [Word]?
+    public let main: Morpheme
+    public let alternatives: [Morpheme]?
     
 }

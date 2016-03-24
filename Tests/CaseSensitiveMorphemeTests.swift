@@ -9,7 +9,7 @@
 import XCTest
 @testable import Vocabulaire
 
-class CaseSensitiveWordTests: XCTestCase {
+class CaseSensitiveMorphemeTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
@@ -22,24 +22,24 @@ class CaseSensitiveWordTests: XCTestCase {
     }
 
     func testViewEqual() {
-        let word: CaseSensitiveWord = "USA"
+        let word: CaseSensitiveMorpheme = "USA"
         XCTAssertEqual(word.view, "USA")
     }
     
     func testTwoWordsEqual() {
-        let first: CaseSensitiveWord = "NYPD"
-        let second: CaseSensitiveWord = "NYPD"
+        let first: CaseSensitiveMorpheme = "NYPD"
+        let second: CaseSensitiveMorpheme = "NYPD"
         XCTAssertTrue(first == second)
     }
     
     func testTwoWordsNotEqual() {
-        let first: CaseSensitiveWord = "AAPL"
-        let second: CaseSensitiveWord = "aaPl"
+        let first: CaseSensitiveMorpheme = "AAPL"
+        let second: CaseSensitiveMorpheme = "aaPl"
         XCTAssertFalse(first == second)
     }
     
     func testViewNotEqual() {
-        let word = CaseSensitiveWord("USPS")
+        let word = CaseSensitiveMorpheme("USPS")
         XCTAssertNotEqual(word.view, "usps")
     }
     

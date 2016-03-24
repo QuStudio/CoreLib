@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct GeneralWord: Word {
+public struct GeneralMorpheme: Morpheme {
 
     private let string: String
 
@@ -34,7 +34,7 @@ public struct GeneralWord: Word {
 
 }
 
-extension GeneralWord: StringLiteralConvertible {
+extension GeneralMorpheme: StringLiteralConvertible {
 
     public init(stringLiteral value: StringLiteralType) {
         self.init(value)
@@ -50,7 +50,7 @@ extension GeneralWord: StringLiteralConvertible {
 
 }
 
-extension GeneralWord: Hashable {
+extension GeneralMorpheme: Hashable {
 
     public var hashValue: Int {
         return lowercase.hashValue
@@ -58,6 +58,6 @@ extension GeneralWord: Hashable {
 
 }
 
-public func == (left: GeneralWord, right: GeneralWord) -> Bool {
+public func == (left: GeneralMorpheme, right: GeneralMorpheme) -> Bool {
     return left.lowercase == right.lowercase
 }

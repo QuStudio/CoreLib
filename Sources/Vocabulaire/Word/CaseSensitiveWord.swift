@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct CaseSensitiveWord: Word {
+public struct CaseSensitiveMorpheme: Morpheme {
 
     public init(_ value: String) {
         self.view = value
@@ -18,7 +18,7 @@ public struct CaseSensitiveWord: Word {
 }
 
 
-extension CaseSensitiveWord: StringLiteralConvertible {
+extension CaseSensitiveMorpheme: StringLiteralConvertible {
 
     public init(stringLiteral value: StringLiteralType) {
         self.init(value)
@@ -34,7 +34,7 @@ extension CaseSensitiveWord: StringLiteralConvertible {
 
 }
 
-extension CaseSensitiveWord: Hashable {
+extension CaseSensitiveMorpheme: Hashable {
 
     public var hashValue: Int {
         return view.hashValue
@@ -42,6 +42,6 @@ extension CaseSensitiveWord: Hashable {
 
 }
 
-public func == (left: CaseSensitiveWord, right: CaseSensitiveWord) -> Bool {
+public func == (left: CaseSensitiveMorpheme, right: CaseSensitiveMorpheme) -> Bool {
     return left.view == right.view
 }

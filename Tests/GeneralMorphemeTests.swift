@@ -9,7 +9,7 @@
 import XCTest
 @testable import Vocabulaire
 
-class GeneralWordTests: XCTestCase {
+class GeneralMorphemeTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
@@ -22,20 +22,20 @@ class GeneralWordTests: XCTestCase {
     }
     
     func testEqual() {
-        let firstWord: GeneralWord = "hello"
-        let secondWord: GeneralWord = "Hello"
+        let firstWord: GeneralMorpheme = "hello"
+        let secondWord: GeneralMorpheme = "Hello"
         XCTAssertEqual(firstWord, secondWord)
         XCTAssertTrue(firstWord == secondWord)
     }
     
     func testNotEqual() {
-        let firstWord: GeneralWord = "hello"
-        let secondWord = GeneralWord("swift")
+        let firstWord: GeneralMorpheme = "hello"
+        let secondWord = GeneralMorpheme("swift")
         XCTAssertNotEqual(firstWord, secondWord)
     }
     
     func testViews() {
-        let word: GeneralWord = "macIntosh"
+        let word: GeneralMorpheme = "macIntosh"
         XCTAssertEqual(word.lowercase, "macintosh")
         XCTAssertEqual(word.view, "Macintosh")
         XCTAssertEqual(word.uppercase, "MACINTOSH")

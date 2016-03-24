@@ -10,7 +10,7 @@ import Foundation
 
 public protocol Lexeme {
 
-    var lemma: Word { get }
+    var lemma: Morpheme { get }
     var meaning: String { get }
 
 }
