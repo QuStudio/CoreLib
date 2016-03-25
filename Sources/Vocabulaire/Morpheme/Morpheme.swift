@@ -8,15 +8,17 @@
 
 import Foundation
 
-/// Case insensitive morpheme - it just doesn't care about way it's written or showed.
-/// - Note: "баг", "менеджер", "девелопмент" and so on.
+/// Represents Morpheme (aka Word) type.
+/// - Note: In linguistics, a morpheme is the smallest grammatical unit in a language. In other words, it is the smallest meaningful unit of a language. - Wikipedia
 public struct Morpheme {
 
     /// Private storage for string which was passed to initializaer.
     private let string: String
+    /// Type of Morpheme.
+    /// - Note: see Kind for details.
     public let type: Kind
 
-    /// Creates case insensitive morpheme for given string. "Aapl", "AAPL" and "aaPl" will produce same result.
+    /// Creates morpheme for given string with choosen type.
     public init(_ value: String, type: Kind = .General) {
         self.type = type
         switch type {
@@ -28,8 +30,7 @@ public struct Morpheme {
     }
     
     /// String representation of morpheme.
-    /// - Warning: will always produce capitalized string.
-    /// - Note: "менеджер" -> "Менеджер".
+    /// - Warning: general morpheme will always produce capitalized string. ("менеджер" -> "Менеджер")
     public var view: String {
         switch type {
         case .General:
@@ -39,8 +40,11 @@ public struct Morpheme {
         }
     }
     
+    /// Type of morpheme
     public enum Kind {
+        /// Doesn't care about how it's written
         case General
+        /// Do care about how it's written
         case CaseSensitive
     }
     
