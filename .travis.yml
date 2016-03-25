@@ -7,7 +7,7 @@ script:
   - xcodebuild test -project Vocabulaire.xcodeproj/ -scheme "Vocabulaire Mac" -destination 'platform=OS X,arch=x86_64' | xcpretty && exit ${PIPESTATUS[0]}
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -J 'Vocabulaire'
+  - bash <(curl -s https://codecov.io/bash)
 
 notifications:
   slack:
