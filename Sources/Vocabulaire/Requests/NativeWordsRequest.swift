@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct NativeWordsRequest {
+public struct NativesRequest {
     
     public let main: Morpheme
     public let alternatives: [Morpheme]?
