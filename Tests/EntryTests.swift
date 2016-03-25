@@ -27,18 +27,18 @@ class EntryTests: XCTestCase {
     }
 
     func testSort() {
-        let foreign = ForeignLexeme(lemma: GeneralMorpheme("Manager"),
+        let foreign = ForeignLexeme(lemma: Morpheme("Manager"),
                                     forms: [],
-                                    origin: GeneralMorpheme("manager"),
+                                    origin: Morpheme("manager"),
                                     meaning: "A head of something",
                                     permissibility: .NotAllowed)
-        let native1 = NativeLexeme(lemma: GeneralMorpheme("Управляющий"),
+        let native1 = NativeLexeme(lemma: Morpheme("Управляющий"),
                                    meaning: "",
                                    usage: .General)
-        let native2 = NativeLexeme(lemma: GeneralMorpheme("Главный"),
+        let native2 = NativeLexeme(lemma: Morpheme("Главный"),
                                    meaning: "",
                                    usage: .Promising)
-        let native3 = NativeLexeme(lemma: GeneralMorpheme("Заведующий"),
+        let native3 = NativeLexeme(lemma: Morpheme("Заведующий"),
                                    meaning: "",
                                    usage: .Rare)
         let natives: Set = [native1, native2, native3]
@@ -48,18 +48,18 @@ class EntryTests: XCTestCase {
     }
     
     func testWrongSort() {
-        let foreign = ForeignLexeme(lemma: GeneralMorpheme("Manager"),
+        let foreign = ForeignLexeme(lemma: Morpheme("Manager"),
                                     forms: [],
-                                    origin: GeneralMorpheme("manager"),
+                                    origin: Morpheme("manager"),
                                     meaning: "A head of something",
                                     permissibility: .NotAllowed)
-        let native1 = NativeLexeme(lemma: GeneralMorpheme("Управляющий"),
+        let native1 = NativeLexeme(lemma: Morpheme("Управляющий"),
                                    meaning: "",
                                    usage: .General)
-        let native2 = NativeLexeme(lemma: GeneralMorpheme("Главный"),
+        let native2 = NativeLexeme(lemma: Morpheme("Главный"),
                                    meaning: "",
                                    usage: .Promising)
-        let native3 = NativeLexeme(lemma: GeneralMorpheme("Заведующий"),
+        let native3 = NativeLexeme(lemma: Morpheme("Заведующий"),
                                    meaning: "",
                                    usage: .Rare)
         let natives: Set = [native1, native2, native3]
@@ -70,10 +70,10 @@ class EntryTests: XCTestCase {
     }
     
     func testAlphabeticalVocabulary() {
-        let entry1 = entry(forName: GeneralMorpheme("менеджер"), permissibility: .NotAllowed)
-        let entry2 = entry(forName: GeneralMorpheme("нонпрофит"), permissibility: .NotAllowed)
-        let entry3 = entry(forName: GeneralMorpheme("баг"), permissibility: .Allowed)
-        let entry4 = entry(forName: CaseSensitiveMorpheme("США"), permissibility: .NotAllowed)
+        let entry1 = entry(forName: Morpheme("менеджер"), permissibility: .NotAllowed)
+        let entry2 = entry(forName: Morpheme("нонпрофит"), permissibility: .NotAllowed)
+        let entry3 = entry(forName: Morpheme("баг"), permissibility: .Allowed)
+        let entry4 = entry(forName: Morpheme("США", type: .CaseSensitive), permissibility: .NotAllowed)
         let vocabulary: Vocabulary = [entry1, entry2, entry3, entry4]
         let sorted = vocabulary.alphabetical
         XCTAssertEqual(sorted, [entry3, entry1, entry2, entry4] as Vocabulary)
