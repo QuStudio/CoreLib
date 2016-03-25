@@ -91,8 +91,8 @@
 		BEAC67801CA2B930004D2EFE /* Vocabulaire iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vocabulaire iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEAC679F1CA2BB5C004D2EFE /* Vocabulaire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vocabulaire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEAC67A91CA2BD96004D2EFE /* Vocabulary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vocabulary.swift; sourceTree = "<group>"; usesTabs = 0; };
-		BEAC67B71CA31F03004D2EFE /* EntryProposal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EntryProposal.swift; path = Requests/EntryProposal.swift; sourceTree = "<group>"; };
-		BEAC67BB1CA320B2004D2EFE /* NativesProposal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativesProposal.swift; sourceTree = "<group>"; };
+		BEAC67B71CA31F03004D2EFE /* EntryProposal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = EntryProposal.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BEAC67BB1CA320B2004D2EFE /* NativesProposal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = NativesProposal.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		BEAC67BF1CA320C7004D2EFE /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BECA57291CA07E6300757379 /* ForeignLexeme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForeignLexeme.swift; sourceTree = "<group>"; };
 		BECA572B1CA07EB700757379 /* NativeLexeme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeLexeme.swift; sourceTree = "<group>"; };
@@ -103,8 +103,8 @@
 		BEDE05DB1CA05C4F00D04EF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEDE05E41CA05E5900D04EF7 /* Lexeme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lexeme.swift; sourceTree = "<group>"; };
 		BEDE05E61CA0787F00D04EF7 /* Morpheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Morpheme.swift; sourceTree = "<group>"; };
-		BEF2D7D11CA5325700172582 /* ClientEntryProposal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientEntryProposal.swift; sourceTree = "<group>"; };
-		BEF2D7D51CA5326800172582 /* ServerEntryProposal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerEntryProposal.swift; sourceTree = "<group>"; };
+		BEF2D7D11CA5325700172582 /* ClientEntryProposal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ClientEntryProposal.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BEF2D7D51CA5326800172582 /* ServerEntryProposal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ServerEntryProposal.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,8 +197,7 @@
 				BEF2D7D01CA5323200172582 /* EntryProposals */,
 				BEAC67BB1CA320B2004D2EFE /* NativesProposal.swift */,
 			);
-			name = Proposals;
-			path = Requests;
+			path = Proposals;
 			sourceTree = "<group>";
 		};
 		BEDE05C01CA05C4E00D04EF7 = {
@@ -249,8 +248,7 @@
 				BEF2D7D11CA5325700172582 /* ClientEntryProposal.swift */,
 				BEF2D7D51CA5326800172582 /* ServerEntryProposal.swift */,
 			);
-			name = EntryProposals;
-			path = ..;
+			path = EntryProposals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

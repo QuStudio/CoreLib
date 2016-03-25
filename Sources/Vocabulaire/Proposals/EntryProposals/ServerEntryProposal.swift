@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// Entryproposal which is handled on server-side.
+/// EntryProposal which is handled on server-side.
 /// - Note: this struct can also be sent to client-side to present in activity feed or something like that. So when user post ClientEntryProposal - it's gone, and then he can follow the status of his proposal via ServerEntryProposal.
 public struct ServerEntryProposal: EntryProposal {
     
@@ -48,13 +48,13 @@ public struct ServerEntryProposal: EntryProposal {
     /// Creates an instance for given client entry proposal, id and status.
     ///
     /// - Parameter status: awaiting by default.
-    public init(clientproposal: ClientEntryProposal, id: Int, status: Status = .Awaiting) {
+    public init(clientProposal: ClientEntryProposal, id: Int, status: Status = .Awaiting) {
         self.id = id
-        self.author = clientproposal.author
-        self.foreign = clientproposal.foreign
-        self.native = clientproposal.native
-        self.rationale = clientproposal.rationale
-        self.postedAt = clientproposal.postedAt
+        self.author = clientProposal.author
+        self.foreign = clientProposal.foreign
+        self.native = clientProposal.native
+        self.rationale = clientProposal.rationale
+        self.postedAt = clientProposal.postedAt
         self.status = status
     }
     
