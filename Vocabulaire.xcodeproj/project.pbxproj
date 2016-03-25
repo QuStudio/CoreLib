@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE83B22B1CA18AAC00F80D10 /* CaseSensitiveMorpheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B22A1CA18AAC00F80D10 /* CaseSensitiveMorpheme.swift */; };
-		BE83B2311CA1987200F80D10 /* GeneralMorpheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2301CA1987200F80D10 /* GeneralMorpheme.swift */; };
+		BE83B2311CA1987200F80D10 /* Morpheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2301CA1987200F80D10 /* Morpheme.swift */; };
 		BE83B2341CA19D0F00F80D10 /* GeneralMorphemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2321CA19CB400F80D10 /* GeneralMorphemeTests.swift */; };
 		BE83B2361CA1F29900F80D10 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2351CA1F29900F80D10 /* Entry.swift */; };
 		BE83B2381CA1F34900F80D10 /* CaseSensitiveMorphemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2371CA1F34900F80D10 /* CaseSensitiveMorphemeTests.swift */; };
@@ -23,9 +22,7 @@
 		BEAC67931CA2B9C2004D2EFE /* Lexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE05E41CA05E5900D04EF7 /* Lexeme.swift */; };
 		BEAC67941CA2B9C4004D2EFE /* ForeignLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA57291CA07E6300757379 /* ForeignLexeme.swift */; };
 		BEAC67951CA2B9C7004D2EFE /* NativeLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA572B1CA07EB700757379 /* NativeLexeme.swift */; };
-		BEAC67961CA2B9CB004D2EFE /* Morpheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE05E61CA0787F00D04EF7 /* Morpheme.swift */; };
-		BEAC67971CA2B9CB004D2EFE /* GeneralMorpheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2301CA1987200F80D10 /* GeneralMorpheme.swift */; };
-		BEAC67981CA2B9CB004D2EFE /* CaseSensitiveMorpheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B22A1CA18AAC00F80D10 /* CaseSensitiveMorpheme.swift */; };
+		BEAC67971CA2B9CB004D2EFE /* Morpheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2301CA1987200F80D10 /* Morpheme.swift */; };
 		BEAC67991CA2B9CB004D2EFE /* Prioritied.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B23B1CA1F66500F80D10 /* Prioritied.swift */; };
 		BEAC67A81CA2BBE4004D2EFE /* Vocabulaire.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDE05CD1CA05C4E00D04EF7 /* Vocabulaire.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEAC67AA1CA2BD96004D2EFE /* Vocabulary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC67A91CA2BD96004D2EFE /* Vocabulary.swift */; };
@@ -35,9 +32,7 @@
 		BEAC67AE1CA2C089004D2EFE /* Lexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE05E41CA05E5900D04EF7 /* Lexeme.swift */; };
 		BEAC67AF1CA2C089004D2EFE /* ForeignLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA57291CA07E6300757379 /* ForeignLexeme.swift */; };
 		BEAC67B01CA2C089004D2EFE /* NativeLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA572B1CA07EB700757379 /* NativeLexeme.swift */; };
-		BEAC67B11CA2C08D004D2EFE /* Morpheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE05E61CA0787F00D04EF7 /* Morpheme.swift */; };
-		BEAC67B21CA2C08D004D2EFE /* GeneralMorpheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2301CA1987200F80D10 /* GeneralMorpheme.swift */; };
-		BEAC67B31CA2C08D004D2EFE /* CaseSensitiveMorpheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B22A1CA18AAC00F80D10 /* CaseSensitiveMorpheme.swift */; };
+		BEAC67B21CA2C08D004D2EFE /* Morpheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2301CA1987200F80D10 /* Morpheme.swift */; };
 		BEAC67B41CA2C08D004D2EFE /* Prioritied.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B23B1CA1F66500F80D10 /* Prioritied.swift */; };
 		BEAC67B81CA31F03004D2EFE /* EntryProposal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC67B71CA31F03004D2EFE /* EntryProposal.swift */; };
 		BEAC67B91CA31F03004D2EFE /* EntryProposal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC67B71CA31F03004D2EFE /* EntryProposal.swift */; };
@@ -53,7 +48,6 @@
 		BEDE05CE1CA05C4E00D04EF7 /* Vocabulaire.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDE05CD1CA05C4E00D04EF7 /* Vocabulaire.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEDE05D51CA05C4F00D04EF7 /* Vocabulaire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDE05CA1CA05C4E00D04EF7 /* Vocabulaire.framework */; };
 		BEDE05E51CA05E5900D04EF7 /* Lexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE05E41CA05E5900D04EF7 /* Lexeme.swift */; };
-		BEDE05E71CA0787F00D04EF7 /* Morpheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE05E61CA0787F00D04EF7 /* Morpheme.swift */; };
 		BEF2D7D21CA5325700172582 /* ClientEntryProposal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2D7D11CA5325700172582 /* ClientEntryProposal.swift */; };
 		BEF2D7D31CA5325700172582 /* ClientEntryProposal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2D7D11CA5325700172582 /* ClientEntryProposal.swift */; };
 		BEF2D7D41CA5325700172582 /* ClientEntryProposal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF2D7D11CA5325700172582 /* ClientEntryProposal.swift */; };
@@ -80,8 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BE83B22A1CA18AAC00F80D10 /* CaseSensitiveMorpheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseSensitiveMorpheme.swift; sourceTree = "<group>"; };
-		BE83B2301CA1987200F80D10 /* GeneralMorpheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralMorpheme.swift; sourceTree = "<group>"; };
+		BE83B2301CA1987200F80D10 /* Morpheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Morpheme.swift; sourceTree = "<group>"; };
 		BE83B2321CA19CB400F80D10 /* GeneralMorphemeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralMorphemeTests.swift; sourceTree = "<group>"; };
 		BE83B2351CA1F29900F80D10 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		BE83B2371CA1F34900F80D10 /* CaseSensitiveMorphemeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseSensitiveMorphemeTests.swift; sourceTree = "<group>"; };
@@ -102,7 +95,6 @@
 		BEDE05D41CA05C4F00D04EF7 /* VocabulaireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VocabulaireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDE05DB1CA05C4F00D04EF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEDE05E41CA05E5900D04EF7 /* Lexeme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lexeme.swift; sourceTree = "<group>"; };
-		BEDE05E61CA0787F00D04EF7 /* Morpheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Morpheme.swift; sourceTree = "<group>"; };
 		BEF2D7D11CA5325700172582 /* ClientEntryProposal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ClientEntryProposal.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		BEF2D7D51CA5326800172582 /* ServerEntryProposal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ServerEntryProposal.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
@@ -151,9 +143,7 @@
 		BE83B22C1CA18AC300F80D10 /* Morpheme */ = {
 			isa = PBXGroup;
 			children = (
-				BEDE05E61CA0787F00D04EF7 /* Morpheme.swift */,
-				BE83B2301CA1987200F80D10 /* GeneralMorpheme.swift */,
-				BE83B22A1CA18AAC00F80D10 /* CaseSensitiveMorpheme.swift */,
+				BE83B2301CA1987200F80D10 /* Morpheme.swift */,
 			);
 			path = Morpheme;
 			sourceTree = "<group>";
@@ -465,15 +455,13 @@
 				BEAC67951CA2B9C7004D2EFE /* NativeLexeme.swift in Sources */,
 				BEAC67921CA2B9BF004D2EFE /* Entry.swift in Sources */,
 				BEAC67AB1CA2BD96004D2EFE /* Vocabulary.swift in Sources */,
-				BEAC67961CA2B9CB004D2EFE /* Morpheme.swift in Sources */,
 				BEAC67931CA2B9C2004D2EFE /* Lexeme.swift in Sources */,
 				BEF2D7D71CA5326800172582 /* ServerEntryProposal.swift in Sources */,
 				BEAC67BD1CA320B2004D2EFE /* NativesProposal.swift in Sources */,
-				BEAC67971CA2B9CB004D2EFE /* GeneralMorpheme.swift in Sources */,
+				BEAC67971CA2B9CB004D2EFE /* Morpheme.swift in Sources */,
 				BEAC67B91CA31F03004D2EFE /* EntryProposal.swift in Sources */,
 				BEF2D7D31CA5325700172582 /* ClientEntryProposal.swift in Sources */,
 				BEAC67C11CA320C7004D2EFE /* User.swift in Sources */,
-				BEAC67981CA2B9CB004D2EFE /* CaseSensitiveMorpheme.swift in Sources */,
 				BEAC67991CA2B9CB004D2EFE /* Prioritied.swift in Sources */,
 				BEAC67941CA2B9C4004D2EFE /* ForeignLexeme.swift in Sources */,
 			);
@@ -497,16 +485,14 @@
 				BEAC67AD1CA2C085004D2EFE /* Entry.swift in Sources */,
 				BEAC67AC1CA2BD96004D2EFE /* Vocabulary.swift in Sources */,
 				BEAC67AE1CA2C089004D2EFE /* Lexeme.swift in Sources */,
-				BEAC67B31CA2C08D004D2EFE /* CaseSensitiveMorpheme.swift in Sources */,
 				BEF2D7D81CA5326800172582 /* ServerEntryProposal.swift in Sources */,
 				BEAC67BE1CA320B2004D2EFE /* NativesProposal.swift in Sources */,
 				BEAC67B01CA2C089004D2EFE /* NativeLexeme.swift in Sources */,
 				BEAC67BA1CA31F03004D2EFE /* EntryProposal.swift in Sources */,
 				BEF2D7D41CA5325700172582 /* ClientEntryProposal.swift in Sources */,
 				BEAC67C21CA320C7004D2EFE /* User.swift in Sources */,
-				BEAC67B21CA2C08D004D2EFE /* GeneralMorpheme.swift in Sources */,
+				BEAC67B21CA2C08D004D2EFE /* Morpheme.swift in Sources */,
 				BEAC67B41CA2C08D004D2EFE /* Prioritied.swift in Sources */,
-				BEAC67B11CA2C08D004D2EFE /* Morpheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,14 +504,12 @@
 				BECA572C1CA07EB700757379 /* NativeLexeme.swift in Sources */,
 				BEAC67AA1CA2BD96004D2EFE /* Vocabulary.swift in Sources */,
 				BEDE05E51CA05E5900D04EF7 /* Lexeme.swift in Sources */,
-				BEDE05E71CA0787F00D04EF7 /* Morpheme.swift in Sources */,
 				BEF2D7D61CA5326800172582 /* ServerEntryProposal.swift in Sources */,
 				BEAC67BC1CA320B2004D2EFE /* NativesProposal.swift in Sources */,
-				BE83B22B1CA18AAC00F80D10 /* CaseSensitiveMorpheme.swift in Sources */,
 				BEAC67B81CA31F03004D2EFE /* EntryProposal.swift in Sources */,
 				BEF2D7D21CA5325700172582 /* ClientEntryProposal.swift in Sources */,
 				BEAC67C01CA320C7004D2EFE /* User.swift in Sources */,
-				BE83B2311CA1987200F80D10 /* GeneralMorpheme.swift in Sources */,
+				BE83B2311CA1987200F80D10 /* Morpheme.swift in Sources */,
 				BE83B23C1CA1F66500F80D10 /* Prioritied.swift in Sources */,
 				BECA572A1CA07E6300757379 /* ForeignLexeme.swift in Sources */,
 			);

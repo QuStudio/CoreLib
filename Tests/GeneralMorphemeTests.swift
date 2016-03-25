@@ -22,23 +22,23 @@ class GeneralMorphemeTests: XCTestCase {
     }
     
     func testEqual() {
-        let firstWord: GeneralMorpheme = "hello"
-        let secondWord: GeneralMorpheme = "Hello"
+        let firstWord: Morpheme = "hello"
+        let secondWord: Morpheme = "Hello"
         XCTAssertEqual(firstWord, secondWord)
         XCTAssertTrue(firstWord == secondWord)
     }
     
     func testNotEqual() {
-        let firstWord: GeneralMorpheme = "hello"
-        let secondWord = GeneralMorpheme("swift")
+        let firstWord: Morpheme = "hello"
+        let secondWord = Morpheme("swift")
         XCTAssertNotEqual(firstWord, secondWord)
     }
     
     func testViews() {
-        let word: GeneralMorpheme = "macIntosh"
-        XCTAssertEqual(word.lowercase, "macintosh")
+        let word: Morpheme = "macIntosh"
+        XCTAssertEqual(word.view.lowercaseString, "macintosh")
         XCTAssertEqual(word.view, "Macintosh")
-        XCTAssertEqual(word.uppercase, "MACINTOSH")
+        XCTAssertEqual(word.view.uppercaseString, "MACINTOSH")
         XCTAssertEqual(word.description, "Macintosh")
     }
 

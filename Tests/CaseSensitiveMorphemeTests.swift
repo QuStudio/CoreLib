@@ -22,24 +22,24 @@ class CaseSensitiveMorphemeTests: XCTestCase {
     }
 
     func testViewEqual() {
-        let word: CaseSensitiveMorpheme = "USA"
+        let word = Morpheme("USA", type: .CaseSensitive)
         XCTAssertEqual(word.view, "USA")
     }
     
     func testTwoWordsEqual() {
-        let first: CaseSensitiveMorpheme = "NYPD"
-        let second: CaseSensitiveMorpheme = "NYPD"
+        let first = Morpheme("NYPD", type: .CaseSensitive)
+        let second = Morpheme("NYPD", type: .CaseSensitive)
         XCTAssertTrue(first == second)
     }
     
     func testTwoWordsNotEqual() {
-        let first: CaseSensitiveMorpheme = "AAPL"
-        let second: CaseSensitiveMorpheme = "aaPl"
+        let first = Morpheme("AAPL", type: .CaseSensitive)
+        let second = Morpheme("aaPL", type: .CaseSensitive)
         XCTAssertFalse(first == second)
     }
     
     func testViewNotEqual() {
-        let word = CaseSensitiveMorpheme("USPS")
+        let word = Morpheme("USPS", type: .CaseSensitive)
         XCTAssertNotEqual(word.view, "usps")
     }
     
