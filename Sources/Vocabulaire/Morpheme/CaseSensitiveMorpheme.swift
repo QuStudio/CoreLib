@@ -8,16 +8,19 @@
 
 import Foundation
 
+/// Case sensitive morpheme, i.e. one which cares about the way it's written.
 public struct CaseSensitiveMorpheme: Morpheme {
 
+    /// Creates case sensitive morpheme for given string.
     public init(_ value: String) {
         self.view = value
     }
+    /// String representation of morpheme.
     public let view: String
 
 }
 
-
+// Extension to support StringLiteralConvertible protocol.
 extension CaseSensitiveMorpheme: StringLiteralConvertible {
 
     public init(stringLiteral value: StringLiteralType) {

@@ -8,6 +8,16 @@
 
 import Foundation
 
-protocol Prioritied {
+/// Shows that entities, which implement this protocol, can be sorted by priority.
+public protocol Prioritied {
     var priority: Int { get }
+}
+
+extension SequenceType where Generator.Element: Prioritied {
+    
+    /// Just proof-of-concept. Protocol awesomeness.
+    public func sortByPriority() -> [Generator.Element] {
+        return self.sort({ $0.priority < $1.priority })
+    }
+    
 }

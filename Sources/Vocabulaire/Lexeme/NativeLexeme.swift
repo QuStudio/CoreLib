@@ -8,15 +8,22 @@
 
 import Foundation
 
+/// An entity which represents a given translation for some other foreign lexeme.
 public struct NativeLexeme: Lexeme {
 
+    /// Main morpheme of lexeme.
     public let lemma: Morpheme
+    /// Description of lexeme meaning.
     public let meaning: String
+    /// Level of how often and "normal" it feels to use this lexeme in native language.
     public let usage: Usage
 
     public enum Usage: Int, Prioritied {
+        /// The lexeme is generally accepted an society.
         case General = 1
+        /// Lexeme sounds a bit strange, but natural.
         case Promising
+        /// Use of this lexeme in native language is extra-rare and sounds weird.
         case Rare
         
         public var priority: Int {

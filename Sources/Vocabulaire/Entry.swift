@@ -8,11 +8,16 @@
 
 import Foundation
 
+/// An entity which represents dictionary entry (aka the translation).
 public struct Entry {
     
+    /// Entry identifier.
     public let id: Int
+    /// Foreign lexeme.
     public let foreign: ForeignLexeme
+    /// Set of translations of foreign lexeme.
     public let natives: Set<NativeLexeme>
+    /// Author of Entry.
     public let author: User?
     
     public init(id: Int, foreign: ForeignLexeme, natives: Set<NativeLexeme>, author: User? = nil) {
@@ -35,6 +40,8 @@ public func == (left: Entry, right: Entry) -> Bool {
 
 extension Entry {
     
+    /// An array of translations sorted by Usage.
+    /// - Note: Usage is an enum declared in NativeLexeme.Usage.
     public var nativesByUsage: [NativeLexeme] {
         return natives.sort({ $0.usage.priority < $1.usage.priority })
     }

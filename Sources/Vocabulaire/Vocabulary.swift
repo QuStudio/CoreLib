@@ -8,10 +8,12 @@
 
 import Foundation
 
+/// An array of entrues.
 public typealias Vocabulary = [Entry]
 
 extension SequenceType where Generator.Element == Entry {
 
+    /// Entries sorted in alphabetical order.
 	var alphabetical: Vocabulary {
 		return self.sort({ $0.foreign.lemma.view < $1.foreign.lemma.view })
 	}

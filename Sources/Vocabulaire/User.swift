@@ -8,10 +8,14 @@
 
 import Foundation
 
+/// Basic entity which represents a user of Qubular.
 public struct User {
     
+    /// User identifier.
     public let id: Int
+    /// Username.
     public let username: String
+    /// Determines user privileges and access level.
     public let status: Status
     
     public enum Status {
