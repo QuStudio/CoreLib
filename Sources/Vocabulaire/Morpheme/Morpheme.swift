@@ -22,5 +22,3 @@ extension Morpheme {
     }
     
 }
-
-struct Morph { }
