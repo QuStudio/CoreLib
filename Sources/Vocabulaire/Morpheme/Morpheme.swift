@@ -82,5 +82,6 @@ extension Morpheme: Hashable {
 }
 
 public func == (left: Morpheme, right: Morpheme) -> Bool {
-    return left.view == right.view && left.type == right.type
+    //return left.view == right.view && left.type == right.type
+    return left.type == right.type && left.view == right.view
 }
