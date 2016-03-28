@@ -18,16 +18,23 @@ public struct NativeLexeme: Lexeme {
     /// Level of how often and "normal" it feels to use this lexeme in native language.
     public let usage: Usage
 
-    public enum Usage: Int, Prioritied {
+    public enum Usage: String, Prioritied {
         /// The lexeme is generally accepted an society.
-        case General = 1
+        case General = "general"
         /// Lexeme sounds a bit strange, but natural.
-        case Promising
+        case Promising = "promising"
         /// Use of this lexeme in native language is extra-rare and sounds weird.
-        case Rare
+        case Rare = "rare"
         
         public var priority: Int {
-            return rawValue
+            switch self {
+            case .General:
+                return 1
+            case .Promising:
+                return 2
+            case .Rare:
+                return 3
+            }
         }
     }
 

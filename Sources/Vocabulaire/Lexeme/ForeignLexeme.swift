@@ -24,18 +24,27 @@ public struct ForeignLexeme: Lexeme {
     public let permissibility: Permissibility
     
     /// Level of how bad the foreign word is.
-    public enum Permissibility: Int, Prioritied {
+    public enum Permissibility: String, Prioritied {
         /// Native lexeme or foreign lexeme which has distinct, clear meaning in native language.
-        case Allowed = 1
+        case Allowed = "allowed"
         /// Lexeme is generally allowed to use in native language.
-        case GenerallyAllowed
+        case GenerallyAllowed = "generally-allowed"
         /// There are good native analogues, so lexeme is not recommended to use.
-        case NotRecommended
+        case NotRecommended = "not-recommended"
         /// Avoid use of this lexemes.
-        case NotAllowed
+        case NotAllowed = "not-allowed"
         
         public var priority: Int {
-            return rawValue
+            switch self {
+            case .Allowed:
+                return 1
+            case .GenerallyAllowed:
+                return 2
+            case .NotRecommended:
+                return 3
+            case .NotAllowed:
+                return 4
+            }
         }
     }
 
