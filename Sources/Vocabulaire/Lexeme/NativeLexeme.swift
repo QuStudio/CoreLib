@@ -6,8 +6,6 @@
 //  Copyright © 2016 Oleg Dreyman. All rights reserved.
 //
 
-import Foundation
-
 /// An entity which represents a given translation for some other foreign lexeme.
 public struct NativeLexeme: Lexeme {
 

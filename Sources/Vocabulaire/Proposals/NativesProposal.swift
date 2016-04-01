@@ -6,8 +6,6 @@
 //  Copyright © 2016 Oleg Dreyman. All rights reserved.
 //
 
-import Foundation
-
 /// Container of proposed translations to native language.
 public struct NativesProposal {
     

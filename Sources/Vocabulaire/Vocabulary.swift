@@ -6,11 +6,20 @@
 //  Copyright © 2016 Oleg Dreyman. All rights reserved.
 //
 
-import Foundation
-
 /// An array of entrues.
 public typealias Vocabulary = [Entry]
 
+#if swift(>=3.0)
+extension Sequence where Iterator.Element == Entry {
+    
+    /// Entries sorted in alphabetical order.
+    var alphabetical: Vocabulary {
+        return self.sort({ $0.foreign.lemma.view < $1.foreign.lemma.view })
+    }
+    
+}
+
+#else
 extension SequenceType where Generator.Element == Entry {
 
     /// Entries sorted in alphabetical order.
@@ -19,3 +28,5 @@ extension SequenceType where Generator.Element == Entry {
 	}
 
 }
+
+#endif

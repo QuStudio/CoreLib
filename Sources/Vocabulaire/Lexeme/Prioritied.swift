@@ -6,8 +6,6 @@
 //  Copyright © 2016 Oleg Dreyman. All rights reserved.
 //
 
-import Foundation
-
 /// Shows that entities, which implement this protocol, can be sorted by priority.
 public protocol Prioritied {
     var priority: Int { get }

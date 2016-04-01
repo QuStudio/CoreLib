@@ -6,8 +6,6 @@
 //  Copyright © 2016 Oleg Dreyman. All rights reserved.
 //
 
-import Foundation
-
 /// Represents Morpheme (aka Word) type.
 /// - Note: In linguistics, a morpheme is the smallest grammatical unit in a language. In other words, it is the smallest meaningful unit of a language. - Wikipedia
 public struct Morpheme {

@@ -6,8 +6,6 @@
 //  Copyright © 2016 Oleg Dreyman. All rights reserved.
 //
 
-import Foundation
-
 /// An entity representing translating lexeme.
 public struct ForeignLexeme: Lexeme {
 

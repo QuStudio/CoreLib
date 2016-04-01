@@ -6,8 +6,6 @@
 //  Copyright © 2016 Oleg Dreyman. All rights reserved.
 //
 
-import Foundation
-
 /// Basic protocol for Lexeme entity.
 /// - SeeAlso: [https://en.wikipedia.org/wiki/Lexeme](https://en.wikipedia.org/wiki/Lexeme)
 public protocol Lexeme {

@@ -6,8 +6,6 @@
 //  Copyright © 2016 Oleg Dreyman. All rights reserved.
 //
 
-import Foundation
-
 /// An entity which represents dictionary entry (aka the translation).
 public struct Entry {
     
