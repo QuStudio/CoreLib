@@ -14,7 +14,7 @@ extension Sequence where Iterator.Element == Entry {
     
     /// Entries sorted in alphabetical order.
     var alphabetical: Vocabulary {
-        return self.sort({ $0.foreign.lemma.view < $1.foreign.lemma.view })
+        return self.sorted { $0.foreign.lemma.view < $1.foreign.lemma.view }
     }
     
 }

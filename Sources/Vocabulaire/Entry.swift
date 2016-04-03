@@ -38,10 +38,18 @@ public func == (left: Entry, right: Entry) -> Bool {
 
 extension Entry {
     
+    #if swift(>=3.0)
+    public var nativesByUsage: [NativeLexeme] {
+        return natives.sorted { $0.usage.priority < $1.usage.priority }
+    }
+    
+    #else
+    
     /// An array of translations sorted by Usage.
     /// - Note: Usage is an enum declared in NativeLexeme.Usage.
     public var nativesByUsage: [NativeLexeme] {
         return natives.sort({ $0.usage.priority < $1.usage.priority })
     }
+    #endif
     
 }

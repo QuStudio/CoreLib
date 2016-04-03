@@ -10,6 +10,12 @@ import XCTest
 @testable import Vocabulaire
 
 class CaseSensitiveMorphemeTests: XCTestCase {
+    
+    #if swift(>=3.0)
+    let caseSensitive = Morpheme.Kind.caseSensitive
+    #else
+    let caseSensitive = Morpheme.Kind.CaseSensitive
+    #endif
 
     override func setUp() {
         super.setUp()
@@ -22,24 +28,24 @@ class CaseSensitiveMorphemeTests: XCTestCase {
     }
 
     func testViewEqual() {
-        let word = Morpheme("USA", type: .CaseSensitive)
+        let word = Morpheme("USA", type: caseSensitive)
         XCTAssertEqual(word.view, "USA")
     }
     
     func testTwoWordsEqual() {
-        let first = Morpheme("NYPD", type: .CaseSensitive)
-        let second = Morpheme("NYPD", type: .CaseSensitive)
+        let first = Morpheme("NYPD", type: caseSensitive)
+        let second = Morpheme("NYPD", type: caseSensitive)
         XCTAssertTrue(first == second)
     }
     
     func testTwoWordsNotEqual() {
-        let first = Morpheme("AAPL", type: .CaseSensitive)
-        let second = Morpheme("aaPL", type: .CaseSensitive)
+        let first = Morpheme("AAPL", type: caseSensitive)
+        let second = Morpheme("aaPL", type: caseSensitive)
         XCTAssertFalse(first == second)
     }
     
     func testViewNotEqual() {
-        let word = Morpheme("USPS", type: .CaseSensitive)
+        let word = Morpheme("USPS", type: caseSensitive)
         XCTAssertNotEqual(word.view, "usps")
     }
     

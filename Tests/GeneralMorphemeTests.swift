@@ -36,10 +36,17 @@ class GeneralMorphemeTests: XCTestCase {
     
     func testViews() {
         let word: Morpheme = "macIntosh"
+        #if swift(>=3.0)
+        XCTAssertEqual(word.view.lowercased(), "macintosh")
+        XCTAssertEqual(word.view, "Macintosh")
+        XCTAssertEqual(word.view.uppercased(), "MACINTOSH")
+        XCTAssertEqual(word.description, "Macintosh")
+        #else
         XCTAssertEqual(word.view.lowercaseString, "macintosh")
         XCTAssertEqual(word.view, "Macintosh")
         XCTAssertEqual(word.view.uppercaseString, "MACINTOSH")
         XCTAssertEqual(word.description, "Macintosh")
+        #endif
     }
 
 }

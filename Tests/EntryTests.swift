@@ -69,11 +69,17 @@ class EntryTests: XCTestCase {
         XCTAssertNotEqual(sortedNatives, [native2, native1, native3])
     }
     
+    #if swift(>=3.0)
+    let caseSensitive = Morpheme.Kind.caseSensitive
+    #else
+    let caseSensitive = Morpheme.Kind.CaseSensitive
+    #endif
+    
     func testAlphabeticalVocabulary() {
         let entry1 = entry(forName: Morpheme("менеджер"), permissibility: .NotAllowed)
         let entry2 = entry(forName: Morpheme("нонпрофит"), permissibility: .NotAllowed)
         let entry3 = entry(forName: Morpheme("баг"), permissibility: .Allowed)
-        let entry4 = entry(forName: Morpheme("США", type: .CaseSensitive), permissibility: .NotAllowed)
+        let entry4 = entry(forName: Morpheme("США", type: caseSensitive), permissibility: .NotAllowed)
         let vocabulary: Vocabulary = [entry1, entry2, entry3, entry4]
         let sorted = vocabulary.alphabetical
         XCTAssertEqual(sorted, [entry3, entry1, entry2, entry4] as Vocabulary)

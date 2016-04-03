@@ -16,6 +16,18 @@ public struct Morpheme {
     /// - Note: see Kind for details.
     public let type: Kind
 
+    
+    #if swift(>=3.0)
+    public init(_ value: String, type: Kind = .general) {
+        self.type = type
+        switch type {
+        case .general:
+            self.string = value.lowercased()
+        case .caseSensitive:
+            self.string = value
+        }
+    }
+    #else
     /// Creates morpheme for given string with choosen type.
     public init(_ value: String, type: Kind = .General) {
         self.type = type
@@ -26,24 +38,39 @@ public struct Morpheme {
             self.string = value
         }
     }
+    #endif
     
     /// String representation of morpheme.
     /// - Warning: general morpheme will always produce capitalized string. ("менеджер" -> "Менеджер")
     public var view: String {
+        #if swift(>=3.0)
+        switch type {
+        case .general:
+            return string.capitalized
+        case .caseSensitive:
+            return string
+        }
+        #else
         switch type {
         case .General:
             return string.capitalizedString
         case .CaseSensitive:
             return string
         }
+        #endif
     }
     
     /// Type of morpheme
     public enum Kind {
+        
+        #if swift(>=3.0)
+        case general, caseSensitive
+        #else
         /// Doesn't care about how it's written
         case General
         /// Do care about how it's written
         case CaseSensitive
+        #endif
     }
     
 }
