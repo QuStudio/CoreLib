@@ -21,6 +21,27 @@ public struct ForeignLexeme: Lexeme {
     /// Level of how bad the foreign word is.
     public let permissibility: Permissibility
     
+    #if swift(>=3.0)
+    public enum Permissibility: String, Prioritied {
+        case allowed = "allowed"
+        case generallyAllowed = "generally-allowed"
+        case notRecommended = "not-recommended"
+        case notAllowed = "not-allowed"
+        
+        public var priority: Int {
+            switch self {
+            case .allowed:
+                return 1
+            case .generallyAllowed:
+                return 2
+            case .notRecommended:
+                return 3
+            case .notAllowed:
+                return 4
+            }
+        }
+    }
+    #else
     /// Level of how bad the foreign word is.
     public enum Permissibility: String, Prioritied {
         /// Native lexeme or foreign lexeme which has distinct, clear meaning in native language.
@@ -45,6 +66,7 @@ public struct ForeignLexeme: Lexeme {
             }
         }
     }
+    #endif
 
 }
 

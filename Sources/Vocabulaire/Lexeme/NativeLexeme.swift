@@ -16,6 +16,24 @@ public struct NativeLexeme: Lexeme {
     /// Level of how often and "normal" it feels to use this lexeme in native language.
     public let usage: Usage
 
+    #if swift(>=3.0)
+    public enum Usage: String, Prioritied {
+        case general
+        case promising
+        case rare
+        
+        public var priority: Int {
+            switch self {
+            case .general:
+                return 1
+            case .promising:
+                return 2
+            case .rare:
+                return 3
+            }
+        }
+    }
+    #else
     public enum Usage: String, Prioritied {
         /// The lexeme is generally accepted an society.
         case General = "general"
@@ -35,6 +53,7 @@ public struct NativeLexeme: Lexeme {
             }
         }
     }
+    #endif
 
 }
 

@@ -16,10 +16,17 @@ public struct User {
     /// Determines user privileges and access level.
     public let status: Status
     
+    #if swift(>=3.0)
+    public enum Status {
+        case regular
+        case boardMember
+    }
+    #else
     public enum Status {
         case Regular
         case BoardMember
     }
+    #endif
     
 }
 
