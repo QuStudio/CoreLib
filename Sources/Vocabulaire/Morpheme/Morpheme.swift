@@ -48,14 +48,22 @@ public struct Morpheme {
         #if swift(>=3.0)
         switch type {
         case .general:
-            return string.capitalizedString
+            #if os(Linux)
+                return string.capitalizedString
+            #else
+                return string.capitalized
+            #endif
         case .caseSensitive:
             return string
         }
         #else
         switch type {
         case .General:
-            return string.capitalizedString
+            #if os(Linux)
+                return string.capitalizedString
+            #else
+                return string.capitalized
+            #endif
         case .CaseSensitive:
             return string
         }
