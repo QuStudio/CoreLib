@@ -59,11 +59,7 @@ public struct Morpheme {
         #else
         switch type {
         case .General:
-            #if os(Linux)
-                return string.capitalizedString
-            #else
-                return string.capitalized
-            #endif
+            return string.capitalizedString
         case .CaseSensitive:
             return string
         }
