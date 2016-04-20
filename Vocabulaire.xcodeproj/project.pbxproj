@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE1CFC211CC7C95B00A6B7FF /* CaseSensitiveMorphemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1CFC1E1CC7C95B00A6B7FF /* CaseSensitiveMorphemeTests.swift */; };
+		BE1CFC221CC7C95B00A6B7FF /* CaseSensitiveMorphemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1CFC1E1CC7C95B00A6B7FF /* CaseSensitiveMorphemeTests.swift */; };
+		BE1CFC231CC7C95B00A6B7FF /* EntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1CFC1F1CC7C95B00A6B7FF /* EntryTests.swift */; };
+		BE1CFC241CC7C95B00A6B7FF /* EntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1CFC1F1CC7C95B00A6B7FF /* EntryTests.swift */; };
+		BE1CFC251CC7C95B00A6B7FF /* GeneralMorphemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1CFC201CC7C95B00A6B7FF /* GeneralMorphemeTests.swift */; };
+		BE1CFC261CC7C95B00A6B7FF /* GeneralMorphemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1CFC201CC7C95B00A6B7FF /* GeneralMorphemeTests.swift */; };
 		BE83B2311CA1987200F80D10 /* Morpheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2301CA1987200F80D10 /* Morpheme.swift */; };
-		BE83B2341CA19D0F00F80D10 /* GeneralMorphemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2321CA19CB400F80D10 /* GeneralMorphemeTests.swift */; };
 		BE83B2361CA1F29900F80D10 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2351CA1F29900F80D10 /* Entry.swift */; };
-		BE83B2381CA1F34900F80D10 /* CaseSensitiveMorphemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2371CA1F34900F80D10 /* CaseSensitiveMorphemeTests.swift */; };
 		BE83B23C1CA1F66500F80D10 /* Prioritied.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B23B1CA1F66500F80D10 /* Prioritied.swift */; };
-		BE83B23E1CA1F78100F80D10 /* EntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B23D1CA1F78100F80D10 /* EntryTests.swift */; };
 		BEAC67811CA2B930004D2EFE /* Vocabulaire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEAC67771CA2B930004D2EFE /* Vocabulaire.framework */; };
 		BEAC678E1CA2B96E004D2EFE /* Vocabulaire.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDE05CD1CA05C4E00D04EF7 /* Vocabulaire.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEAC678F1CA2B996004D2EFE /* GeneralMorphemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2321CA19CB400F80D10 /* GeneralMorphemeTests.swift */; };
-		BEAC67901CA2B996004D2EFE /* CaseSensitiveMorphemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2371CA1F34900F80D10 /* CaseSensitiveMorphemeTests.swift */; };
-		BEAC67911CA2B996004D2EFE /* EntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B23D1CA1F78100F80D10 /* EntryTests.swift */; };
 		BEAC67921CA2B9BF004D2EFE /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE83B2351CA1F29900F80D10 /* Entry.swift */; };
 		BEAC67931CA2B9C2004D2EFE /* Lexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE05E41CA05E5900D04EF7 /* Lexeme.swift */; };
 		BEAC67941CA2B9C4004D2EFE /* ForeignLexeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA57291CA07E6300757379 /* ForeignLexeme.swift */; };
@@ -74,12 +74,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE1CFC1E1CC7C95B00A6B7FF /* CaseSensitiveMorphemeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CaseSensitiveMorphemeTests.swift; path = Vocabulaire/CaseSensitiveMorphemeTests.swift; sourceTree = "<group>"; };
+		BE1CFC1F1CC7C95B00A6B7FF /* EntryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EntryTests.swift; path = Vocabulaire/EntryTests.swift; sourceTree = "<group>"; };
+		BE1CFC201CC7C95B00A6B7FF /* GeneralMorphemeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeneralMorphemeTests.swift; path = Vocabulaire/GeneralMorphemeTests.swift; sourceTree = "<group>"; };
 		BE83B2301CA1987200F80D10 /* Morpheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Morpheme.swift; sourceTree = "<group>"; };
-		BE83B2321CA19CB400F80D10 /* GeneralMorphemeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralMorphemeTests.swift; sourceTree = "<group>"; };
 		BE83B2351CA1F29900F80D10 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
-		BE83B2371CA1F34900F80D10 /* CaseSensitiveMorphemeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseSensitiveMorphemeTests.swift; sourceTree = "<group>"; };
 		BE83B23B1CA1F66500F80D10 /* Prioritied.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prioritied.swift; sourceTree = "<group>"; };
-		BE83B23D1CA1F78100F80D10 /* EntryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryTests.swift; sourceTree = "<group>"; };
 		BEAC67771CA2B930004D2EFE /* Vocabulaire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vocabulaire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEAC67801CA2B930004D2EFE /* Vocabulaire iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vocabulaire iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEAC679F1CA2BB5C004D2EFE /* Vocabulaire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vocabulaire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -224,9 +224,9 @@
 			isa = PBXGroup;
 			children = (
 				BEDE05DB1CA05C4F00D04EF7 /* Info.plist */,
-				BE83B2321CA19CB400F80D10 /* GeneralMorphemeTests.swift */,
-				BE83B2371CA1F34900F80D10 /* CaseSensitiveMorphemeTests.swift */,
-				BE83B23D1CA1F78100F80D10 /* EntryTests.swift */,
+				BE1CFC1E1CC7C95B00A6B7FF /* CaseSensitiveMorphemeTests.swift */,
+				BE1CFC1F1CC7C95B00A6B7FF /* EntryTests.swift */,
+				BE1CFC201CC7C95B00A6B7FF /* GeneralMorphemeTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -471,9 +471,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEAC67901CA2B996004D2EFE /* CaseSensitiveMorphemeTests.swift in Sources */,
-				BEAC678F1CA2B996004D2EFE /* GeneralMorphemeTests.swift in Sources */,
-				BEAC67911CA2B996004D2EFE /* EntryTests.swift in Sources */,
+				BE1CFC241CC7C95B00A6B7FF /* EntryTests.swift in Sources */,
+				BE1CFC221CC7C95B00A6B7FF /* CaseSensitiveMorphemeTests.swift in Sources */,
+				BE1CFC261CC7C95B00A6B7FF /* GeneralMorphemeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,9 +519,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE83B2381CA1F34900F80D10 /* CaseSensitiveMorphemeTests.swift in Sources */,
-				BE83B2341CA19D0F00F80D10 /* GeneralMorphemeTests.swift in Sources */,
-				BE83B23E1CA1F78100F80D10 /* EntryTests.swift in Sources */,
+				BE1CFC231CC7C95B00A6B7FF /* EntryTests.swift in Sources */,
+				BE1CFC211CC7C95B00A6B7FF /* CaseSensitiveMorphemeTests.swift in Sources */,
+				BE1CFC251CC7C95B00A6B7FF /* GeneralMorphemeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

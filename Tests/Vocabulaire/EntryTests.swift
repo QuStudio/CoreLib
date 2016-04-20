@@ -21,6 +21,20 @@ class EntryTests: XCTestCase {
         super.tearDown()
     }
     
+    #if swift(>=3.0)
+    let notAllowed = ForeignLexeme.Permissibility.notAllowed
+    let allowed = ForeignLexeme.Permissibility.allowed
+    let general = NativeLexeme.Usage.general
+    let promising = NativeLexeme.Usage.promising
+    let rare = NativeLexeme.Usage.rare
+    #else
+    let notAllowed = ForeignLexeme.Permissibility.NotAllowed
+    let allowed = ForeignLexeme.Permissibility.Allowed
+    let general = NativeLexeme.Usage.General
+    let promising = NativeLexeme.Usage.Promising
+    let rare = NativeLexeme.Usage.Rare
+    #endif
+    
     func entry(forName name: Morpheme, permissibility: ForeignLexeme.Permissibility) -> Entry {
         let foreign = ForeignLexeme(lemma: name, forms: [], origin: name, meaning: "", permissibility: permissibility)
         return Entry(id: 1, foreign: foreign, natives: [])
@@ -31,16 +45,16 @@ class EntryTests: XCTestCase {
                                     forms: [],
                                     origin: Morpheme("manager"),
                                     meaning: "A head of something",
-                                    permissibility: .NotAllowed)
+                                    permissibility: notAllowed)
         let native1 = NativeLexeme(lemma: Morpheme("Управляющий"),
                                    meaning: "",
-                                   usage: .General)
+                                   usage: general)
         let native2 = NativeLexeme(lemma: Morpheme("Главный"),
                                    meaning: "",
-                                   usage: .Promising)
+                                   usage: promising)
         let native3 = NativeLexeme(lemma: Morpheme("Заведующий"),
                                    meaning: "",
-                                   usage: .Rare)
+                                   usage: rare)
         let natives: Set = [native1, native2, native3]
         let entry = Entry(id: 1, foreign: foreign, natives: natives)
         let sortedNatives = entry.nativesByUsage
@@ -52,16 +66,16 @@ class EntryTests: XCTestCase {
                                     forms: [],
                                     origin: Morpheme("manager"),
                                     meaning: "A head of something",
-                                    permissibility: .NotAllowed)
+                                    permissibility: notAllowed)
         let native1 = NativeLexeme(lemma: Morpheme("Управляющий"),
                                    meaning: "",
-                                   usage: .General)
+                                   usage: general)
         let native2 = NativeLexeme(lemma: Morpheme("Главный"),
                                    meaning: "",
-                                   usage: .Promising)
+                                   usage: promising)
         let native3 = NativeLexeme(lemma: Morpheme("Заведующий"),
                                    meaning: "",
-                                   usage: .Rare)
+                                   usage: rare)
         let natives: Set = [native1, native2, native3]
         let entry = Entry(id: 2, foreign: foreign, natives: natives)
         let sortedNatives = entry.nativesByUsage
@@ -76,10 +90,10 @@ class EntryTests: XCTestCase {
     #endif
     
     func testAlphabeticalVocabulary() {
-        let entry1 = entry(forName: Morpheme("менеджер"), permissibility: .NotAllowed)
-        let entry2 = entry(forName: Morpheme("нонпрофит"), permissibility: .NotAllowed)
-        let entry3 = entry(forName: Morpheme("баг"), permissibility: .Allowed)
-        let entry4 = entry(forName: Morpheme("США", type: caseSensitive), permissibility: .NotAllowed)
+        let entry1 = entry(forName: Morpheme("менеджер"), permissibility: notAllowed)
+        let entry2 = entry(forName: Morpheme("нонпрофит"), permissibility: notAllowed)
+        let entry3 = entry(forName: Morpheme("баг"), permissibility: allowed)
+        let entry4 = entry(forName: Morpheme("США", type: caseSensitive), permissibility: notAllowed)
         let vocabulary: Vocabulary = [entry1, entry2, entry3, entry4]
         let sorted = vocabulary.alphabetical
         XCTAssertEqual(sorted, [entry3, entry1, entry2, entry4] as Vocabulary)
