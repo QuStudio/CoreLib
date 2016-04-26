@@ -16,6 +16,12 @@ public struct User {
     /// Determines user privileges and access level.
     public let status: Status
     
+    public init(id: Int, username: String, status: Status) {
+        self.id = id
+        self.username = username
+        self.status = status
+    }
+    
     #if swift(>=3.0)
     public enum Status {
         case regular

@@ -21,6 +21,14 @@ public struct ForeignLexeme: Lexeme {
     /// Level of how bad the foreign word is.
     public let permissibility: Permissibility
     
+    public init(lemma: Morpheme, forms: [Morpheme], origin: Morpheme, meaning: String, permissibility: Permissibility) {
+        self.lemma = lemma
+        self.forms = forms
+        self.origin = origin
+        self.meaning = meaning
+        self.permissibility = permissibility
+    }
+    
     #if swift(>=3.0)
     public enum Permissibility: String, Prioritied {
         case allowed = "allowed"

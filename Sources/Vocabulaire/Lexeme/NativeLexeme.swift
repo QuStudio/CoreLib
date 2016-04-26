@@ -15,6 +15,12 @@ public struct NativeLexeme: Lexeme {
     public let meaning: String
     /// Level of how often and "normal" it feels to use this lexeme in native language.
     public let usage: Usage
+    
+    public init(lemma: Morpheme, meaning: String, usage: Usage) {
+        self.lemma = lemma
+        self.meaning = meaning
+        self.usage = usage
+    }
 
     #if swift(>=3.0)
     public enum Usage: String, Prioritied {
