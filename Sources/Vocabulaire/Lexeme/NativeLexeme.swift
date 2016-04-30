@@ -27,6 +27,7 @@ public struct NativeLexeme: Lexeme {
         case general
         case promising
         case rare
+        case fancy
         
         public var priority: Int {
             switch self {
@@ -34,8 +35,10 @@ public struct NativeLexeme: Lexeme {
                 return 1
             case .promising:
                 return 2
-            case .rare:
+            case .fancy:
                 return 3
+            case .rare:
+                return 4
             }
         }
     }
@@ -47,6 +50,8 @@ public struct NativeLexeme: Lexeme {
         case Promising = "promising"
         /// Use of this lexeme in native language is extra-rare and sounds weird.
         case Rare = "rare"
+        /// Completely native but completely fancy. For example, "селфи" -> "самострел"
+        case Fancy = "fancy"
         
         public var priority: Int {
             switch self {
@@ -54,8 +59,10 @@ public struct NativeLexeme: Lexeme {
                 return 1
             case .Promising:
                 return 2
-            case .Rare:
+            case .Fancy:
                 return 3
+            case .Rare:
+                return 4
             }
         }
     }
