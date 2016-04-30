@@ -94,9 +94,9 @@ class EntryTests: XCTestCase {
         let entry2 = entry(forName: Morpheme("нонпрофит"), permissibility: notAllowed)
         let entry3 = entry(forName: Morpheme("баг"), permissibility: allowed)
         let entry4 = entry(forName: Morpheme("США", type: caseSensitive), permissibility: notAllowed)
-        let vocabulary = Vocabulary(version: .develop, entries: [entry1, entry2, entry3, entry4])
+        let vocabulary: Vocabulary = [entry1, entry2, entry3, entry4]
         let sorted = vocabulary.alphabetical
-        XCTAssertEqual(sorted, [entry3, entry1, entry2, entry4])
+        XCTAssertEqual(sorted, [entry3, entry1, entry2, entry4] as Vocabulary)
     }
 
 }

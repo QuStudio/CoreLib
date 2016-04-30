@@ -1,5 +1,10 @@
 language: objective-c
+os:
+  - linux
+  - osx
 osx_image: xcode7.3
+sudo: required
+dist: trusty
 xcode_project: Vocabulaire.xcodeproj
 xcode_scheme: Vocabulaire Mac
 
@@ -7,12 +12,8 @@ install:
   - eval "$(curl -sL https://gist.githubusercontent.com/kylef/5c0475ff02b7c7671d2a/raw/02090c7ede5a637b76e6df1710e83cd0bbe7dcdf/swiftenv-install.sh)"
 
 script:
-  - swift build --fetch # clones all dependencies
-  - rm -rf Packages/*/Tests # deletes dependency's tests until duplicate Package.tests issue can be resolved in SPM. At that point, remove.
-  - swift build
-  - swift build --configuration release
-  - swift test
-  - ./test
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then ./test.sh ; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then ./swiftpm.sh ; fi
 
 notifications:
   slack:
