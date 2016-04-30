@@ -21,6 +21,9 @@ public struct Vocabulary {
         let major: Int
         let minor: Int
         let patch: Int
+        public static var develop: Version {
+            return Version(major: 0, minor: 0, patch: 0)
+        }
     }
 }
 
