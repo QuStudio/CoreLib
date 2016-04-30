@@ -7,66 +7,43 @@
 //
 
 /// An array of entrues.
-public typealias Vocabularee = [Entry]
-
-public struct Vocabulary {
-    private var entries: [Entry]
-    public let version: Version
-    public init(version: Version, entries: [Entry] = []) {
-        self.entries = entries
-        self.version = version
-    }
-    
-    public struct Version {
-        let major: Int
-        let minor: Int
-        let patch: Int
-        public static var develop: Version {
-            return Version(major: 0, minor: 0, patch: 0)
-        }
-    }
-}
+public typealias Vocabulary = [Entry]
 
 #if swift(>=3.0)
-    typealias MutableCollectionProtocol = MutableCollection
+    extension Sequence where Iterator.Element == Entry {
+    
+    /// Entries sorted in alphabetical order.
+    var alphabetical: Vocabulary {
+    return self.sorted { $0.foreign.lemma.view < $1.foreign.lemma.view }
+    }
+    
+    }
+    
 #else
-    typealias MutableCollectionProtocol = MutableCollectionType
+    extension SequenceType where Generator.Element == Entry {
+        
+        /// Entries sorted in alphabetical order.
+        var alphabetical: Vocabulary {
+            return self.sort({ $0.foreign.lemma.view < $1.foreign.lemma.view })
+        }
+        
+    }
 #endif
 
-extension Vocabulary: MutableCollectionProtocol {
-    public typealias Element = Entry
-    public typealias Index = Int
-    public var endIndex: Int {
-        return entries.endIndex
+public struct VocabularyVersion {
+    public let major: Int
+    public let minor: Int
+    public let patch: Int
+    
+    public init(major: Int, minor: Int, patch: Int) {
+        self.major = major
+        self.minor = minor
+        self.patch = patch
     }
-    public var startIndex: Int {
-        return entries.startIndex
-    }
-    public subscript(position: Int) -> Entry {
-        get {
-            return entries[position]
-        }
-        set(entry) {
-            entries[position] = entry
-        }
-    }
-    #if swift(>=3.0)
-        public func makeIterator() -> IndexingIterator<[Entry]> {
-            return entries.makeIterator()
-        }
-    #else
-        public func generate() -> IndexingGenerator<[Entry]> {
-            return entries.generate()
-        }
-    #endif
 }
 
-extension Vocabulary {
-    var alphabetical: [Entry] {
-        #if swift(>=3.0)
-            return self.sorted { $0.foreign.lemma.view < $1.foreign.lemma.view }
-        #else
-            return self.sort({ $0.foreign.lemma.view < $1.foreign.lemma.view })
-        #endif
+extension VocabularyVersion {
+    public static var develop: VocabularyVersion {
+        return VocabularyVersion(major: 0, minor: 0, patch: 0)
     }
 }
