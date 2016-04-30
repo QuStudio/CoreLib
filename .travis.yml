@@ -12,7 +12,7 @@ script:
   - swift build
   - swift build --configuration release
   - swift test
-  - ./test
+  - ./test.sh
 
 notifications:
   slack:
