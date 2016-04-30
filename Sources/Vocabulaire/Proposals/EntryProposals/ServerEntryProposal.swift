@@ -29,21 +29,32 @@ public struct ServerEntryProposal: EntryProposal {
     /// Status of proposal.
     public var status: Status
     
-    /// Status of proposal.
-    public enum Status {
-        /// Accepted in some way and already available on Qubular.
-        case Implemented
-        /// Accepted without massive changes.
-        case Accepted
-        /// Accepted with changes.
-        case AcceptedWithChanges(changes: String)
-        /// Rejected with following rationale.
-        case Rejected(rationale: String)
-        /// Under review.
-        case UnderReview
-        /// Awaiting for review.
-        case Awaiting
-    }
+    #if swift(>=3.0)
+        public enum Status {
+            case implemented
+            case accepted
+            case acceptedWithChanges(changes: String)
+            case rejected(rationale: String)
+            case underReview
+            case awaiting
+        }
+    #else
+        /// Status of proposal.
+        public enum Status {
+            /// Accepted in some way and already available on Qubular.
+            case Implemented
+            /// Accepted without massive changes.
+            case Accepted
+            /// Accepted with changes.
+            case AcceptedWithChanges(changes: String)
+            /// Rejected with following rationale.
+            case Rejected(rationale: String)
+            /// Under review.
+            case UnderReview
+            /// Awaiting for review.
+            case Awaiting
+        }
+    #endif
     
     /// Creates an instance for given client entry proposal, id and status.
     ///
