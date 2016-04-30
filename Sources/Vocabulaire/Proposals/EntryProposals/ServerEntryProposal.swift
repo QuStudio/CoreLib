@@ -55,20 +55,32 @@ public struct ServerEntryProposal: EntryProposal {
             case Awaiting
         }
     #endif
-    
+
+    #if swift(>=3.0)
+        public init(clientProposal: ClientEntryProposal, id: Int, status: Status = .awaiting) {
+            self.id = id
+            self.author = clientProposal.author
+            self.foreign = clientProposal.foreign
+            self.native = clientProposal.native
+            self.rationale = clientProposal.rationale
+            self.postedAt = clientProposal.postedAt
+            self.status = status
+        }
+    #else
     /// Creates an instance for given client entry proposal, id and status.
     ///
     /// - Parameter status: awaiting by default.
-    public init(clientProposal: ClientEntryProposal, id: Int, status: Status = .Awaiting) {
-        self.id = id
-        self.author = clientProposal.author
-        self.foreign = clientProposal.foreign
-        self.native = clientProposal.native
-        self.rationale = clientProposal.rationale
-        self.postedAt = clientProposal.postedAt
-        self.status = status
-    }
-    
+        public init(clientProposal: ClientEntryProposal, id: Int, status: Status = .Awaiting) {
+            self.id = id
+            self.author = clientProposal.author
+            self.foreign = clientProposal.foreign
+            self.native = clientProposal.native
+            self.rationale = clientProposal.rationale
+            self.postedAt = clientProposal.postedAt
+            self.status = status
+        }
+    #endif
+
 }
 
 extension ServerEntryProposal {
