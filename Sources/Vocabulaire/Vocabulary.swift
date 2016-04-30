@@ -30,9 +30,13 @@ public typealias Vocabulary = [Entry]
     }
 #endif
 
+/// Version of the vocabulary, which indicates whether the client need to fetch some updates
 public struct VocabularyVersion {
+    /// Bumps with structural changes
     public let major: Int
+    /// Bumps with new entries
     public let minor: Int
+    /// Bumps with entries fixes
     public let patch: Int
     
     public init(major: Int, minor: Int, patch: Int) {
@@ -43,6 +47,7 @@ public struct VocabularyVersion {
 }
 
 extension VocabularyVersion {
+    /// 0.0.0 (anything can change at any time. Use this during development)
     public static var develop: VocabularyVersion {
         return VocabularyVersion(major: 0, minor: 0, patch: 0)
     }
