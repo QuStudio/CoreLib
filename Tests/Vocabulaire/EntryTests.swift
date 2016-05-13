@@ -98,5 +98,16 @@ class EntryTests: XCTestCase {
         let sorted = vocabulary.alphabetical
         XCTAssertEqual(sorted, [entry3, entry1, entry2, entry4] as Vocabulary)
     }
+    
+    func testVersionComparison() {
+        let version1 = VocabularyVersion(major: 0, minor: 1, patch: 2)
+        let version2 = VocabularyVersion(major: 0, minor: 0, patch: 2)
+        let version3 = VocabularyVersion(major: 0, minor: 1, patch: 3)
+        let version4 = VocabularyVersion(major: 1, minor: 0, patch: 2)
+        XCTAssertGreaterThanOrEqual(version1, version2)
+        XCTAssertGreaterThanOrEqual(version3, version2)
+        XCTAssertGreaterThanOrEqual(version4, version2)
+        XCTAssertGreaterThanOrEqual(version3, version1)
+    }
 
 }

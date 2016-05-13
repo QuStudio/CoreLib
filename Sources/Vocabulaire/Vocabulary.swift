@@ -52,3 +52,21 @@ extension VocabularyVersion {
         return VocabularyVersion(major: 0, minor: 0, patch: 0)
     }
 }
+
+extension VocabularyVersion: Comparable { }
+
+public func == (lhs: VocabularyVersion, rhs: VocabularyVersion) -> Bool {
+    return lhs.major == rhs.major && lhs.minor == rhs.minor && lhs.patch == rhs.patch
+}
+
+public func < (lhs: VocabularyVersion, rhs: VocabularyVersion) -> Bool {
+    if lhs.major > rhs.major {
+        return false
+    } else if lhs.minor > rhs.minor {
+        return false
+    } else if lhs.patch >= rhs.patch {
+        return false
+    } else {
+        return true
+    }
+}
